@@ -36,8 +36,16 @@ function renderParity(svgEl, seasonData, parityResult) {
  * Full circle: all teams in a cycle.
  */
 function renderFullCircle(svgEl, seasonData, parityResult, teamMap) {
-    const chain = parityResult.chain; // last element == first (closing the loop)
+    let chain = parityResult.chain; // last element == first (closing the loop)
     const teamCount = chain.length - 1;
+
+    // Rotate chain so SEA (Reign) is at the top when present
+    const seaIdx = chain.indexOf('SEA');
+    if (seaIdx > 0 && seaIdx < teamCount) {
+        const rotated = chain.slice(seaIdx, teamCount).concat(chain.slice(0, seaIdx));
+        rotated.push(rotated[0]); // close the loop
+        chain = rotated;
+    }
 
     // Arrow marker
     addArrowMarker(svgEl);
@@ -195,27 +203,64 @@ function drawTeamNode(svgEl, teamId, pos, teamData, radius) {
 }
 
 function drawCenterLogo(svgEl) {
-    const logoSize = 70;
+    // Logo + title block centered in the ring.
+    // Ring inner area spans CENTER_Y ± CIRCLE_RADIUS (y: 100–660).
+    // Logo occupies ~60% of ring diameter; positioned above center
+    // so the 2-line title fits below it within the ring.
+    const logoSize = 310;
+    // Logo top edge ~85px below the ring top (100+85=185)
+    const logoTop = CENTER_Y - CIRCLE_RADIUS + 85;
     const img = createSvgElement('image', {
         x: CENTER_X - logoSize / 2,
-        y: CENTER_Y - logoSize / 2,
+        y: logoTop,
         width: logoSize, height: logoSize
     });
-    img.setAttributeNS(XLINK_NS, 'href', 'assets/logos/nwsl.svg');
+    img.setAttributeNS(XLINK_NS, 'href', 'assets/logos/nwsl.png');
     svgEl.appendChild(img);
 }
 
 function drawTitle(svgEl, text) {
-    const title = createSvgElement('text', {
-        x: CENTER_X, y: CENTER_Y + 35,
-        'text-anchor': 'middle',
-        'font-family': 'Arial, sans-serif',
-        'font-size': '20',
-        'font-weight': 'bold',
-        fill: '#333'
-    });
-    title.textContent = text;
-    svgEl.appendChild(title);
+    // Title sits below the center logo
+    const logoSize = 310;
+    const logoTop = CENTER_Y - CIRCLE_RADIUS + 85;
+    const textTop = logoTop + logoSize + 30;
+
+    // Split into two lines: "The YYYY NWSL" and "Circle of Parity"
+    const match = text.match(/^The (\d+) NWSL (.+)$/);
+    if (match) {
+        const line1 = createSvgElement('text', {
+            x: CENTER_X, y: textTop,
+            'text-anchor': 'middle',
+            'font-family': 'Arial, sans-serif',
+            'font-size': '26',
+            'font-weight': 'bold',
+            fill: '#333'
+        });
+        line1.textContent = `The ${match[1]} NWSL`;
+        svgEl.appendChild(line1);
+
+        const line2 = createSvgElement('text', {
+            x: CENTER_X, y: textTop + 32,
+            'text-anchor': 'middle',
+            'font-family': 'Arial, sans-serif',
+            'font-size': '26',
+            'font-weight': 'bold',
+            fill: '#333'
+        });
+        line2.textContent = match[2];
+        svgEl.appendChild(line2);
+    } else {
+        const title = createSvgElement('text', {
+            x: CENTER_X, y: textTop + 16,
+            'text-anchor': 'middle',
+            'font-family': 'Arial, sans-serif',
+            'font-size': '26',
+            'font-weight': 'bold',
+            fill: '#333'
+        });
+        title.textContent = text;
+        svgEl.appendChild(title);
+    }
 }
 
 function drawArrow(svgEl, from, to) {

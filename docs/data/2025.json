@@ -1,20 +1,20 @@
 {
   "season": 2025,
   "teams": [
-    { "id": "BAY", "name": "Bay FC", "color": "#1A3C5E", "logo": "assets/logos/BAY.svg" },
-    { "id": "CHI", "name": "Chicago Stars FC", "color": "#C8102E", "logo": "assets/logos/CHI.svg" },
-    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.svg" },
-    { "id": "KC", "name": "Kansas City Current", "color": "#7A2048", "logo": "assets/logos/KC.svg" },
-    { "id": "LA", "name": "Angel City FC", "color": "#000000", "logo": "assets/logos/LA.svg" },
-    { "id": "LOU", "name": "Racing Louisville FC", "color": "#7B2481", "logo": "assets/logos/LOU.svg" },
-    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.svg" },
-    { "id": "NJY", "name": "Gotham FC", "color": "#0C2340", "logo": "assets/logos/NJY.svg" },
-    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.svg" },
-    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.svg" },
-    { "id": "SD", "name": "San Diego Wave FC", "color": "#003DA5", "logo": "assets/logos/SD.svg" },
-    { "id": "SEA", "name": "Seattle Reign FC", "color": "#862633", "logo": "assets/logos/SEA.svg" },
-    { "id": "UTA", "name": "Utah Royals FC", "color": "#FFD700", "logo": "assets/logos/UTA.svg" },
-    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.svg" }
+    { "id": "BAY", "name": "Bay FC", "color": "#1A3C5E", "logo": "assets/logos/BAY.png" },
+    { "id": "CHI", "name": "Chicago Stars FC", "color": "#C8102E", "logo": "assets/logos/CHI.png" },
+    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.png" },
+    { "id": "KC", "name": "Kansas City Current", "color": "#7A2048", "logo": "assets/logos/KC.png" },
+    { "id": "LA", "name": "Angel City FC", "color": "#000000", "logo": "assets/logos/LA.png" },
+    { "id": "LOU", "name": "Racing Louisville FC", "color": "#7B2481", "logo": "assets/logos/LOU.png" },
+    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.png" },
+    { "id": "NJY", "name": "Gotham FC", "color": "#0C2340", "logo": "assets/logos/NJY.png" },
+    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.png" },
+    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.png" },
+    { "id": "SD", "name": "San Diego Wave FC", "color": "#003DA5", "logo": "assets/logos/SD.png" },
+    { "id": "SEA", "name": "Seattle Reign FC", "color": "#862633", "logo": "assets/logos/SEA.png" },
+    { "id": "UTA", "name": "Utah Royals FC", "color": "#FFD700", "logo": "assets/logos/UTA.png" },
+    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.png" }
   ],
   "weeks": [
     {

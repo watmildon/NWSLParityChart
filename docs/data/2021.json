@@ -1,16 +1,16 @@
 {
   "season": 2021,
   "teams": [
-    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.svg" },
-    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.svg" },
-    { "id": "KC", "name": "Kansas City Current", "color": "#7A2048", "logo": "assets/logos/KC.svg" },
-    { "id": "LOU", "name": "Racing Louisville FC", "color": "#7B2481", "logo": "assets/logos/LOU.svg" },
-    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.svg" },
-    { "id": "NJY", "name": "NJ/NY Gotham FC", "color": "#0C2340", "logo": "assets/logos/NJY.svg" },
-    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.svg" },
-    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.svg" },
-    { "id": "SEA", "name": "OL Reign", "color": "#862633", "logo": "assets/logos/SEA.svg" },
-    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.svg" }
+    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.png" },
+    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.png" },
+    { "id": "KC", "name": "Kansas City Current", "color": "#7A2048", "logo": "assets/logos/KC.png" },
+    { "id": "LOU", "name": "Racing Louisville FC", "color": "#7B2481", "logo": "assets/logos/LOU.png" },
+    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.png" },
+    { "id": "NJY", "name": "NJ/NY Gotham FC", "color": "#0C2340", "logo": "assets/logos/NJY.png" },
+    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.png" },
+    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.png" },
+    { "id": "SEA", "name": "OL Reign", "color": "#862633", "logo": "assets/logos/SEA.png" },
+    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.png" }
   ],
   "weeks": []
 }

@@ -1,16 +1,16 @@
 {
   "season": 2017,
   "teams": [
-    { "id": "BOS", "name": "Boston Breakers", "color": "#002244", "logo": "assets/logos/BOS.svg" },
-    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.svg" },
-    { "id": "FCKC", "name": "FC Kansas City", "color": "#003087", "logo": "assets/logos/FCKC.svg" },
-    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.svg" },
-    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.svg" },
-    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.svg" },
-    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.svg" },
-    { "id": "SEA", "name": "Seattle Reign FC", "color": "#862633", "logo": "assets/logos/SEA.svg" },
-    { "id": "NJY", "name": "Sky Blue FC", "color": "#0C2340", "logo": "assets/logos/NJY.svg" },
-    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.svg" }
+    { "id": "BOS", "name": "Boston Breakers", "color": "#002244", "logo": "assets/logos/BOS_breakers.png" },
+    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.png" },
+    { "id": "FCKC", "name": "FC Kansas City", "color": "#003087", "logo": "assets/logos/FCKC.png" },
+    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.png" },
+    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.png" },
+    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.png" },
+    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.png" },
+    { "id": "SEA", "name": "Seattle Reign FC", "color": "#862633", "logo": "assets/logos/SEA.png" },
+    { "id": "NJY", "name": "Sky Blue FC", "color": "#0C2340", "logo": "assets/logos/NJY.png" },
+    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.png" }
   ],
   "weeks": []
 }
