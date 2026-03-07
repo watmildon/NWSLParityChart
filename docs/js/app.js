@@ -11,11 +11,15 @@ async function loadSeason(year) {
     const response = await fetch(`data/${year}.json`);
     const seasonData = await response.json();
 
-    const result = findParityChain(seasonData);
+    // Use precomputed result if available, otherwise compute live
+    const result = seasonData.parityResult || findParityChain(seasonData);
     renderParity(svgEl, seasonData, result);
 
     // Update info panel
-    if (result.type === 'cycle') {
+    if (seasonData.cancelled) {
+        chainStatus.textContent = '';
+        missingTeamsEl.textContent = '';
+    } else if (result.type === 'cycle') {
         chainStatus.textContent = `Complete circle of parity found! All ${seasonData.teams.length} teams connected.`;
         missingTeamsEl.textContent = '';
     } else {

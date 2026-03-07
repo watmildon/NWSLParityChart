@@ -1,15 +1,61 @@
 {
   "season": 2020,
+  "cancelled": true,
   "teams": [
-    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.png" },
-    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.png" },
-    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.png" },
-    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.png" },
-    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.png" },
-    { "id": "SEA", "name": "OL Reign", "color": "#862633", "logo": "assets/logos/SEA.png" },
-    { "id": "NJY", "name": "Sky Blue FC", "color": "#0C2340", "logo": "assets/logos/NJY.png" },
-    { "id": "UTA", "name": "Utah Royals FC", "color": "#FFD700", "logo": "assets/logos/UTA.png" },
-    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.png" }
+    {
+      "id": "CHI",
+      "name": "Chicago Red Stars",
+      "color": "#C8102E",
+      "logo": "assets/logos/CHI-2017.png"
+    },
+    {
+      "id": "HOU",
+      "name": "Houston Dash",
+      "color": "#F26722",
+      "logo": "assets/logos/HOU-2014.png"
+    },
+    {
+      "id": "NC",
+      "name": "North Carolina Courage",
+      "color": "#003DA5",
+      "logo": "assets/logos/NC-2017.png"
+    },
+    {
+      "id": "ORL",
+      "name": "Orlando Pride",
+      "color": "#633492",
+      "logo": "assets/logos/ORL-2016.png"
+    },
+    {
+      "id": "POR",
+      "name": "Portland Thorns FC",
+      "color": "#A4162F",
+      "logo": "assets/logos/POR-2018.png"
+    },
+    {
+      "id": "SEA",
+      "name": "OL Reign",
+      "color": "#862633",
+      "logo": "assets/logos/SEA-2020.png"
+    },
+    {
+      "id": "NJY",
+      "name": "Sky Blue FC",
+      "color": "#0C2340",
+      "logo": "assets/logos/SKYBLUE-2013.png"
+    },
+    {
+      "id": "UTA",
+      "name": "Utah Royals FC",
+      "color": "#FFD700",
+      "logo": "assets/logos/UTA-2018.png"
+    },
+    {
+      "id": "WAS",
+      "name": "Washington Spirit",
+      "color": "#C8102E",
+      "logo": "assets/logos/WAS-2013.png"
+    }
   ],
   "weeks": []
 }

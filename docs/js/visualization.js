@@ -13,11 +13,30 @@ const TEAM_RADIUS = 42;
 const ARROW_COLOR = '#666666';
 const ARROW_WIDTH = 2;
 
+// Logos that are already circular and fill the node edge-to-edge.
+// Non-circular logos are scaled down to fit inside the circle with padding.
+const CIRCULAR_LOGOS = new Set([
+    'BAY-2024.png',
+    'KC-2021.png',
+    'POR-2013.png', 'POR-2018.png',
+    'UTA-2018.png',
+    'LOU-2021.png',
+    'HOU-2021.png',
+    'ORL-2016.png',
+    'FCKC-2013.png'
+]);
+
 /**
  * Render the parity visualization into the SVG element.
  */
 function renderParity(svgEl, seasonData, parityResult) {
     svgEl.innerHTML = '';
+
+    // Cancelled season (e.g. 2020 COVID)
+    if (seasonData.cancelled) {
+        renderCancelled(svgEl, seasonData);
+        return;
+    }
 
     // Build team lookup
     const teamMap = new Map();
@@ -30,6 +49,32 @@ function renderParity(svgEl, seasonData, parityResult) {
     } else {
         renderPartial(svgEl, seasonData, parityResult, teamMap);
     }
+}
+
+/**
+ * Cancelled season: show virus image and "SEASON CANCELLED" text.
+ */
+function renderCancelled(svgEl, seasonData) {
+    // Size the virus image to match the full parity circle diameter
+    const imgSize = CIRCLE_RADIUS * 2 + TEAM_RADIUS * 2;
+    const img = createSvgElement('image', {
+        x: CENTER_X - imgSize / 2,
+        y: CENTER_Y - imgSize / 2,
+        width: imgSize, height: imgSize
+    });
+    img.setAttributeNS(XLINK_NS, 'href', 'assets/SARS-CoV-2.png');
+    svgEl.appendChild(img);
+
+    const label = createSvgElement('text', {
+        x: CENTER_X, y: CENTER_Y + imgSize / 2 + 40,
+        'text-anchor': 'middle',
+        'font-family': 'Arial, sans-serif',
+        'font-size': '32',
+        'font-weight': 'bold',
+        fill: '#cc0000'
+    });
+    label.textContent = 'SEASON CANCELLED';
+    svgEl.appendChild(label);
 }
 
 /**
@@ -110,10 +155,9 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
     // Center NWSL logo
     drawCenterLogo(svgEl);
 
-    // Teams not in the chain — shown as a cluster below
+    // Teams not in the chain — shown as a cluster anchored to the bottom
     const allUnconnected = hasChain ? missing : seasonData.teams.map(t => t.id);
     if (allUnconnected.length > 0) {
-        const clusterY = hasChain ? 700 : CENTER_Y + 120;
         const spacing = 55;
         const maxPerRow = 10;
         const rows = [];
@@ -121,10 +165,16 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
             rows.push(allUnconnected.slice(i, i + maxPerRow));
         }
 
+        // Anchor cluster from the bottom of the viewBox, working upward
+        const bottomMargin = 30;
+        const lastRowY = VIEW_SIZE - bottomMargin - 22; // 22 = small team radius
+        const clusterFirstRowY = lastRowY - (rows.length - 1) * 60;
+        const labelY = clusterFirstRowY - 35;
+
         // Label
         const labelText = hasChain ? 'Not yet connected' : 'No results yet';
         const label = createSvgElement('text', {
-            x: CENTER_X, y: clusterY - 45,
+            x: CENTER_X, y: labelY,
             'text-anchor': 'middle',
             'font-family': 'Arial, sans-serif',
             'font-size': '14',
@@ -137,7 +187,7 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
             const row = rows[r];
             const rowStartX = CENTER_X - ((row.length - 1) * spacing) / 2;
             for (let i = 0; i < row.length; i++) {
-                const pos = { x: rowStartX + i * spacing, y: clusterY + r * 60 };
+                const pos = { x: rowStartX + i * spacing, y: clusterFirstRowY + r * 60 };
                 drawTeamNode(svgEl, row[i], pos, teamMap.get(row[i]), 22);
             }
         }
@@ -190,10 +240,14 @@ function drawTeamNode(svgEl, teamId, pos, teamData, radius) {
     clipPath.appendChild(clipCircle);
     svgEl.appendChild(clipPath);
 
-    // Logo image
+    // Logo image — circular logos fill edge-to-edge; others are scaled down
+    const logoFile = teamData.logo.split('/').pop();
+    const isCircular = CIRCULAR_LOGOS.has(logoFile);
+    const scale = isCircular ? 1 : 0.85;
+    const imgR = r * scale;
     const img = createSvgElement('image', {
-        x: pos.x - r, y: pos.y - r,
-        width: r * 2, height: r * 2,
+        x: pos.x - imgR, y: pos.y - imgR,
+        width: imgR * 2, height: imgR * 2,
         'clip-path': `url(#${clipId})`
     });
     img.setAttributeNS(XLINK_NS, 'href', teamData.logo);

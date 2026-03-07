@@ -1,18 +1,604 @@
 {
   "season": 2023,
   "teams": [
-    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.png" },
-    { "id": "HOU", "name": "Houston Dash", "color": "#F26722", "logo": "assets/logos/HOU.png" },
-    { "id": "KC", "name": "Kansas City Current", "color": "#7A2048", "logo": "assets/logos/KC.png" },
-    { "id": "LA", "name": "Angel City FC", "color": "#000000", "logo": "assets/logos/LA.png" },
-    { "id": "LOU", "name": "Racing Louisville FC", "color": "#7B2481", "logo": "assets/logos/LOU.png" },
-    { "id": "NC", "name": "North Carolina Courage", "color": "#003DA5", "logo": "assets/logos/NC.png" },
-    { "id": "NJY", "name": "NJ/NY Gotham FC", "color": "#0C2340", "logo": "assets/logos/NJY.png" },
-    { "id": "ORL", "name": "Orlando Pride", "color": "#633492", "logo": "assets/logos/ORL.png" },
-    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.png" },
-    { "id": "SD", "name": "San Diego Wave FC", "color": "#003DA5", "logo": "assets/logos/SD.png" },
-    { "id": "SEA", "name": "OL Reign", "color": "#862633", "logo": "assets/logos/SEA.png" },
-    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.png" }
+    {
+      "id": "CHI",
+      "name": "Chicago Red Stars",
+      "color": "#C8102E",
+      "logo": "assets/logos/CHI-2017.png"
+    },
+    {
+      "id": "HOU",
+      "name": "Houston Dash",
+      "color": "#F26722",
+      "logo": "assets/logos/HOU-2021.png"
+    },
+    {
+      "id": "KC",
+      "name": "Kansas City Current",
+      "color": "#7A2048",
+      "logo": "assets/logos/KC-2022.png"
+    },
+    {
+      "id": "LA",
+      "name": "Angel City FC",
+      "color": "#000000",
+      "logo": "assets/logos/LA-2022.png"
+    },
+    {
+      "id": "LOU",
+      "name": "Racing Louisville FC",
+      "color": "#7B2481",
+      "logo": "assets/logos/LOU-2021.png"
+    },
+    {
+      "id": "NC",
+      "name": "North Carolina Courage",
+      "color": "#003DA5",
+      "logo": "assets/logos/NC-2017.png"
+    },
+    {
+      "id": "NJY",
+      "name": "NJ/NY Gotham FC",
+      "color": "#0C2340",
+      "logo": "assets/logos/NJY-2021.png"
+    },
+    {
+      "id": "ORL",
+      "name": "Orlando Pride",
+      "color": "#633492",
+      "logo": "assets/logos/ORL-2016.png"
+    },
+    {
+      "id": "POR",
+      "name": "Portland Thorns FC",
+      "color": "#A4162F",
+      "logo": "assets/logos/POR-2018.png"
+    },
+    {
+      "id": "SD",
+      "name": "San Diego Wave FC",
+      "color": "#003DA5",
+      "logo": "assets/logos/SD-2022.png"
+    },
+    {
+      "id": "SEA",
+      "name": "OL Reign",
+      "color": "#862633",
+      "logo": "assets/logos/SEA-2020.png"
+    },
+    {
+      "id": "WAS",
+      "name": "Washington Spirit",
+      "color": "#C8102E",
+      "logo": "assets/logos/WAS-2023.png"
+    }
   ],
-  "weeks": []
+  "weeks": [
+    {
+      "week": 1,
+      "results": [
+        {
+          "winner": "NC",
+          "loser": "KC"
+        },
+        {
+          "winner": "POR",
+          "loser": "ORL"
+        },
+        {
+          "winner": "WAS",
+          "loser": "SEA"
+        },
+        {
+          "winner": "SD",
+          "loser": "CHI"
+        },
+        {
+          "winner": "NJY",
+          "loser": "LA"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "KC"
+        },
+        {
+          "winner": "HOU",
+          "loser": "CHI"
+        },
+        {
+          "winner": "SEA",
+          "loser": "NJY"
+        },
+        {
+          "winner": "LA",
+          "loser": "ORL"
+        },
+        {
+          "winner": "SD",
+          "loser": "NC"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "results": [
+        {
+          "winner": "NJY",
+          "loser": "ORL"
+        },
+        {
+          "winner": "WAS",
+          "loser": "NC"
+        },
+        {
+          "winner": "CHI",
+          "loser": "KC"
+        },
+        {
+          "winner": "SEA",
+          "loser": "SD"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "results": [
+        {
+          "winner": "SEA",
+          "loser": "CHI"
+        },
+        {
+          "winner": "NJY",
+          "loser": "NC"
+        },
+        {
+          "winner": "KC",
+          "loser": "ORL"
+        },
+        {
+          "winner": "POR",
+          "loser": "LOU"
+        },
+        {
+          "winner": "SD",
+          "loser": "LA"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "results": [
+        {
+          "winner": "NC",
+          "loser": "HOU"
+        },
+        {
+          "winner": "KC",
+          "loser": "NJY"
+        },
+        {
+          "winner": "ORL",
+          "loser": "SD"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "SD"
+        },
+        {
+          "winner": "ORL",
+          "loser": "LOU"
+        },
+        {
+          "winner": "NJY",
+          "loser": "CHI"
+        },
+        {
+          "winner": "SEA",
+          "loser": "HOU"
+        },
+        {
+          "winner": "LA",
+          "loser": "KC"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "results": [
+        {
+          "winner": "LOU",
+          "loser": "CHI"
+        },
+        {
+          "winner": "HOU",
+          "loser": "POR"
+        },
+        {
+          "winner": "NC",
+          "loser": "SEA"
+        },
+        {
+          "winner": "SD",
+          "loser": "KC"
+        },
+        {
+          "winner": "WAS",
+          "loser": "LA"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "WAS"
+        },
+        {
+          "winner": "POR",
+          "loser": "CHI"
+        },
+        {
+          "winner": "NJY",
+          "loser": "SEA"
+        },
+        {
+          "winner": "LOU",
+          "loser": "KC"
+        },
+        {
+          "winner": "SD",
+          "loser": "HOU"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "results": [
+        {
+          "winner": "SEA",
+          "loser": "LA"
+        },
+        {
+          "winner": "HOU",
+          "loser": "KC"
+        },
+        {
+          "winner": "CHI",
+          "loser": "ORL"
+        },
+        {
+          "winner": "NC",
+          "loser": "LOU"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "SEA"
+        },
+        {
+          "winner": "SD",
+          "loser": "NJY"
+        },
+        {
+          "winner": "HOU",
+          "loser": "ORL"
+        },
+        {
+          "winner": "KC",
+          "loser": "NC"
+        },
+        {
+          "winner": "CHI",
+          "loser": "LA"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "LA"
+        },
+        {
+          "winner": "ORL",
+          "loser": "POR"
+        },
+        {
+          "winner": "NC",
+          "loser": "CHI"
+        },
+        {
+          "winner": "SEA",
+          "loser": "KC"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "results": [
+        {
+          "winner": "LA",
+          "loser": "SD"
+        },
+        {
+          "winner": "NC",
+          "loser": "ORL"
+        },
+        {
+          "winner": "LOU",
+          "loser": "NJY"
+        },
+        {
+          "winner": "POR",
+          "loser": "CHI"
+        },
+        {
+          "winner": "WAS",
+          "loser": "KC"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "results": [
+        {
+          "winner": "KC",
+          "loser": "ORL"
+        },
+        {
+          "winner": "NC",
+          "loser": "LOU"
+        },
+        {
+          "winner": "POR",
+          "loser": "WAS"
+        },
+        {
+          "winner": "NJY",
+          "loser": "CHI"
+        },
+        {
+          "winner": "SEA",
+          "loser": "SD"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "WAS"
+        },
+        {
+          "winner": "NC",
+          "loser": "HOU"
+        },
+        {
+          "winner": "KC",
+          "loser": "POR"
+        },
+        {
+          "winner": "CHI",
+          "loser": "SD"
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "SEA"
+        },
+        {
+          "winner": "CHI",
+          "loser": "HOU"
+        },
+        {
+          "winner": "LOU",
+          "loser": "KC"
+        },
+        {
+          "winner": "NJY",
+          "loser": "POR"
+        },
+        {
+          "winner": "LA",
+          "loser": "NC"
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "results": [
+        {
+          "winner": "KC",
+          "loser": "SEA"
+        },
+        {
+          "winner": "SD",
+          "loser": "NJY"
+        },
+        {
+          "winner": "ORL",
+          "loser": "CHI"
+        },
+        {
+          "winner": "POR",
+          "loser": "NC"
+        }
+      ]
+    },
+    {
+      "week": 17,
+      "results": [
+        {
+          "winner": "SD",
+          "loser": "ORL"
+        },
+        {
+          "winner": "LA",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 18,
+      "results": [
+        {
+          "winner": "LA",
+          "loser": "KC"
+        },
+        {
+          "winner": "LOU",
+          "loser": "POR"
+        },
+        {
+          "winner": "SEA",
+          "loser": "ORL"
+        },
+        {
+          "winner": "CHI",
+          "loser": "WAS"
+        },
+        {
+          "winner": "SD",
+          "loser": "HOU"
+        }
+      ]
+    },
+    {
+      "week": 19,
+      "results": [
+        {
+          "winner": "HOU",
+          "loser": "LOU"
+        },
+        {
+          "winner": "NJY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "KC",
+          "loser": "SD"
+        },
+        {
+          "winner": "ORL",
+          "loser": "NC"
+        },
+        {
+          "winner": "POR",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 20,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "KC"
+        },
+        {
+          "winner": "HOU",
+          "loser": "NJY"
+        },
+        {
+          "winner": "CHI",
+          "loser": "LOU"
+        },
+        {
+          "winner": "SD",
+          "loser": "POR"
+        },
+        {
+          "winner": "ORL",
+          "loser": "LA"
+        }
+      ]
+    },
+    {
+      "week": 21,
+      "results": [
+        {
+          "winner": "LOU",
+          "loser": "ORL"
+        },
+        {
+          "winner": "POR",
+          "loser": "NJY"
+        },
+        {
+          "winner": "LA",
+          "loser": "HOU"
+        },
+        {
+          "winner": "KC",
+          "loser": "CHI"
+        }
+      ]
+    },
+    {
+      "week": 22,
+      "results": [
+        {
+          "winner": "SD",
+          "loser": "LOU"
+        },
+        {
+          "winner": "LA",
+          "loser": "POR"
+        },
+        {
+          "winner": "SEA",
+          "loser": "CHI"
+        },
+        {
+          "winner": "ORL",
+          "loser": "HOU"
+        },
+        {
+          "winner": "NC",
+          "loser": "WAS"
+        }
+      ]
+    }
+  ],
+  "parityResult": {
+    "type": "cycle",
+    "chain": [
+      "CHI",
+      "KC",
+      "ORL",
+      "SD",
+      "NC",
+      "HOU",
+      "POR",
+      "LOU",
+      "NJY",
+      "WAS",
+      "LA",
+      "SEA",
+      "CHI"
+    ],
+    "missingTeams": []
+  }
 }

@@ -1,14 +1,429 @@
 {
   "season": 2013,
   "teams": [
-    { "id": "BOS", "name": "Boston Breakers", "color": "#002244", "logo": "assets/logos/BOS_breakers.png" },
-    { "id": "CHI", "name": "Chicago Red Stars", "color": "#C8102E", "logo": "assets/logos/CHI.png" },
-    { "id": "FCKC", "name": "FC Kansas City", "color": "#003087", "logo": "assets/logos/FCKC.png" },
-    { "id": "POR", "name": "Portland Thorns FC", "color": "#A4162F", "logo": "assets/logos/POR.png" },
-    { "id": "SEA", "name": "Seattle Reign FC", "color": "#862633", "logo": "assets/logos/SEA.png" },
-    { "id": "NJY", "name": "Sky Blue FC", "color": "#0C2340", "logo": "assets/logos/NJY.png" },
-    { "id": "WAS", "name": "Washington Spirit", "color": "#C8102E", "logo": "assets/logos/WAS.png" },
-    { "id": "WNY", "name": "Western New York Flash", "color": "#FFB81C", "logo": "assets/logos/WNY.png" }
+    {
+      "id": "BOS",
+      "name": "Boston Breakers",
+      "color": "#002244",
+      "logo": "assets/logos/BOS_BRK-2013.png"
+    },
+    {
+      "id": "CHI",
+      "name": "Chicago Red Stars",
+      "color": "#C8102E",
+      "logo": "assets/logos/CHI-2013.png"
+    },
+    {
+      "id": "FCKC",
+      "name": "FC Kansas City",
+      "color": "#003087",
+      "logo": "assets/logos/FCKC-2013.png"
+    },
+    {
+      "id": "POR",
+      "name": "Portland Thorns FC",
+      "color": "#A4162F",
+      "logo": "assets/logos/POR-2013.png"
+    },
+    {
+      "id": "SEA",
+      "name": "Seattle Reign FC",
+      "color": "#862633",
+      "logo": "assets/logos/SEA-2013.png"
+    },
+    {
+      "id": "NJY",
+      "name": "Sky Blue FC",
+      "color": "#0C2340",
+      "logo": "assets/logos/SKYBLUE-2013.png"
+    },
+    {
+      "id": "WAS",
+      "name": "Washington Spirit",
+      "color": "#C8102E",
+      "logo": "assets/logos/WAS-2013.png"
+    },
+    {
+      "id": "WNY",
+      "name": "Western New York Flash",
+      "color": "#FFB81C",
+      "logo": "assets/logos/WNY-2013.png"
+    }
   ],
-  "weeks": []
+  "weeks": [
+    {
+      "week": 1,
+      "results": [
+        {
+          "winner": "NJY",
+          "loser": "WNY"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "results": [
+        {
+          "winner": "FCKC",
+          "loser": "SEA"
+        },
+        {
+          "winner": "NJY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "BOS",
+          "loser": "WNY"
+        },
+        {
+          "winner": "POR",
+          "loser": "CHI"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "results": [
+        {
+          "winner": "WNY",
+          "loser": "NJY"
+        },
+        {
+          "winner": "BOS",
+          "loser": "CHI"
+        },
+        {
+          "winner": "POR",
+          "loser": "WAS"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "results": [
+        {
+          "winner": "NJY",
+          "loser": "SEA"
+        },
+        {
+          "winner": "WNY",
+          "loser": "FCKC"
+        },
+        {
+          "winner": "POR",
+          "loser": "CHI"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "SEA"
+        },
+        {
+          "winner": "NJY",
+          "loser": "POR"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "BOS"
+        },
+        {
+          "winner": "POR",
+          "loser": "WAS"
+        },
+        {
+          "winner": "NJY",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "results": [
+        {
+          "winner": "WNY",
+          "loser": "CHI"
+        },
+        {
+          "winner": "BOS",
+          "loser": "WAS"
+        },
+        {
+          "winner": "POR",
+          "loser": "SEA"
+        },
+        {
+          "winner": "NJY",
+          "loser": "FCKC"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "POR"
+        },
+        {
+          "winner": "NJY",
+          "loser": "BOS"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "FCKC"
+        },
+        {
+          "winner": "WNY",
+          "loser": "NJY"
+        },
+        {
+          "winner": "CHI",
+          "loser": "BOS"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "results": [
+        {
+          "winner": "FCKC",
+          "loser": "CHI"
+        },
+        {
+          "winner": "WNY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "POR",
+          "loser": "SEA"
+        },
+        {
+          "winner": "CHI",
+          "loser": "FCKC"
+        },
+        {
+          "winner": "NJY",
+          "loser": "BOS"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "results": [
+        {
+          "winner": "FCKC",
+          "loser": "WAS"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "results": [
+        {
+          "winner": "SEA",
+          "loser": "BOS"
+        },
+        {
+          "winner": "WNY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "SEA",
+          "loser": "CHI"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "POR"
+        },
+        {
+          "winner": "BOS",
+          "loser": "NJY"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "WNY"
+        },
+        {
+          "winner": "NJY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "BOS",
+          "loser": "POR"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "WAS"
+        },
+        {
+          "winner": "SEA",
+          "loser": "WNY"
+        },
+        {
+          "winner": "SEA",
+          "loser": "WAS"
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "WAS"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "SEA"
+        },
+        {
+          "winner": "WNY",
+          "loser": "NJY"
+        },
+        {
+          "winner": "POR",
+          "loser": "BOS"
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "results": [
+        {
+          "winner": "FCKC",
+          "loser": "BOS"
+        },
+        {
+          "winner": "SEA",
+          "loser": "CHI"
+        },
+        {
+          "winner": "BOS",
+          "loser": "WAS"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "NJY"
+        }
+      ]
+    },
+    {
+      "week": 17,
+      "results": [
+        {
+          "winner": "WNY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "POR",
+          "loser": "NJY"
+        },
+        {
+          "winner": "CHI",
+          "loser": "SEA"
+        },
+        {
+          "winner": "NJY",
+          "loser": "WAS"
+        },
+        {
+          "winner": "FCKC",
+          "loser": "POR"
+        }
+      ]
+    },
+    {
+      "week": 18,
+      "results": [
+        {
+          "winner": "BOS",
+          "loser": "POR"
+        },
+        {
+          "winner": "WNY",
+          "loser": "SEA"
+        },
+        {
+          "winner": "WAS",
+          "loser": "CHI"
+        },
+        {
+          "winner": "BOS",
+          "loser": "FCKC"
+        },
+        {
+          "winner": "WAS",
+          "loser": "SEA"
+        }
+      ]
+    },
+    {
+      "week": 19,
+      "results": [
+        {
+          "winner": "WNY",
+          "loser": "BOS"
+        },
+        {
+          "winner": "POR",
+          "loser": "SEA"
+        },
+        {
+          "winner": "CHI",
+          "loser": "FCKC"
+        }
+      ]
+    }
+  ],
+  "parityResult": {
+    "type": "cycle",
+    "chain": [
+      "BOS",
+      "WNY",
+      "NJY",
+      "WAS",
+      "SEA",
+      "CHI",
+      "POR",
+      "FCKC",
+      "BOS"
+    ],
+    "missingTeams": []
+  }
 }
