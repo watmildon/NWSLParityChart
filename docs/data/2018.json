@@ -5,55 +5,64 @@
       "id": "CHI",
       "name": "Chicago Red Stars",
       "color": "#C8102E",
-      "logo": "assets/logos/CHI-2017.png"
+      "logo": "assets/logos/CHI-2017.png",
+      "record": "9-5-10"
     },
     {
       "id": "HOU",
       "name": "Houston Dash",
       "color": "#F26722",
-      "logo": "assets/logos/HOU-2014.png"
+      "logo": "assets/logos/HOU-2014.png",
+      "record": "9-10-5"
     },
     {
       "id": "NC",
       "name": "North Carolina Courage",
       "color": "#003DA5",
-      "logo": "assets/logos/NC-2017.png"
+      "logo": "assets/logos/NC-2017.png",
+      "record": "17-1-6"
     },
     {
       "id": "ORL",
       "name": "Orlando Pride",
       "color": "#633492",
-      "logo": "assets/logos/ORL-2016.png"
+      "logo": "assets/logos/ORL-2016.png",
+      "record": "8-10-6"
     },
     {
       "id": "POR",
       "name": "Portland Thorns FC",
       "color": "#A4162F",
-      "logo": "assets/logos/POR-2018.png"
+      "logo": "assets/logos/POR-2018.png",
+      "record": "12-6-6"
     },
     {
       "id": "SEA",
       "name": "Seattle Reign FC",
       "color": "#862633",
-      "logo": "assets/logos/SEA-2013.png"
+      "logo": "assets/logos/SEA-2013.png",
+      "record": "11-5-8"
     },
     {
       "id": "NJY",
       "name": "Sky Blue FC",
       "color": "#0C2340",
-      "logo": "assets/logos/SKYBLUE-2013.png"
+      "logo": "assets/logos/SKYBLUE-2013.png",
+      "record": "1-17-6"
     },
     {
       "id": "UTA",
       "name": "Utah Royals FC",
       "color": "#FFD700",
-      "logo": "assets/logos/UTA-2018.png"
+      "logo": "assets/logos/UTA-2018.png",
+      "record": "9-7-8"
     },
     {
       "id": "WAS",
       "name": "Washington Spirit",
       "color": "#C8102E",
-      "logo": "assets/logos/WAS-2013.png"
+      "logo": "assets/logos/WAS-2013.png",
+      "record": "2-17-5"
     }
   ],
   "weeks": [
@@ -62,11 +71,15 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2018-03-24",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-03-24",
+          "score": "2-1"
         }
       ]
     },
@@ -75,15 +88,21 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-03-31",
+          "score": "1-0"
         },
         {
           "winner": "WAS",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-03-31",
+          "score": "2-0"
         },
         {
           "winner": "POR",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2018-03-31",
+          "score": "3-2"
         }
       ]
     },
@@ -92,19 +111,27 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-04-14",
+          "score": "1-0"
         },
         {
           "winner": "NC",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-04-14",
+          "score": "4-2"
         },
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-04-15",
+          "score": "2-1"
         },
         {
           "winner": "SEA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-04-15",
+          "score": "1-0"
         }
       ]
     },
@@ -113,15 +140,21 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-04-18",
+          "score": "3-0"
         },
         {
           "winner": "NC",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2018-04-18",
+          "score": "1-0"
         },
         {
           "winner": "ORL",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-04-22",
+          "score": "1-0"
         }
       ]
     },
@@ -130,7 +163,9 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-04-28",
+          "score": "2-0"
         }
       ]
     },
@@ -139,19 +174,27 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2018-05-02",
+          "score": "2-0"
         },
         {
           "winner": "SEA",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2018-05-05",
+          "score": "3-2"
         },
         {
           "winner": "HOU",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-05-05",
+          "score": "3-2"
         },
         {
           "winner": "UTA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-05-05",
+          "score": "2-0"
         }
       ]
     },
@@ -160,15 +203,21 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2018-05-12",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-05-12",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-05-12",
+          "score": "4-1"
         }
       ]
     },
@@ -177,15 +226,21 @@
       "results": [
         {
           "winner": "UTA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-05-19",
+          "score": "1-0"
         },
         {
           "winner": "NC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-05-19",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-05-19",
+          "score": "1-0"
         }
       ]
     },
@@ -194,31 +249,45 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-05-23",
+          "score": "4-3"
         },
         {
           "winner": "WAS",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-05-23",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2018-05-23",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-05-25",
+          "score": "2-0"
         },
         {
           "winner": "ORL",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2018-05-26",
+          "score": "5-2"
         },
         {
           "winner": "SEA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-05-26",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-05-27",
+          "score": "3-2"
         }
       ]
     },
@@ -227,15 +296,21 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2018-05-30",
+          "score": "4-1"
         },
         {
           "winner": "UTA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-06-02",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-06-02",
+          "score": "2-0"
         }
       ]
     },
@@ -244,11 +319,15 @@
       "results": [
         {
           "winner": "UTA",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2018-06-16",
+          "score": "1-0"
         },
         {
           "winner": "ORL",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-06-16",
+          "score": "3-2"
         }
       ]
     },
@@ -257,19 +336,27 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-06-22",
+          "score": "3-1"
         },
         {
           "winner": "NC",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2018-06-23",
+          "score": "4-1"
         },
         {
           "winner": "ORL",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-06-23",
+          "score": "1-0"
         },
         {
           "winner": "CHI",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-06-23",
+          "score": "2-0"
         }
       ]
     },
@@ -278,23 +365,33 @@
       "results": [
         {
           "winner": "HOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-06-27",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-06-30",
+          "score": "3-0"
         },
         {
           "winner": "SEA",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2018-06-30",
+          "score": "1-0"
         },
         {
           "winner": "UTA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-06-30",
+          "score": "3-1"
         },
         {
           "winner": "CHI",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-07-01",
+          "score": "2-0"
         }
       ]
     },
@@ -303,23 +400,33 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2018-07-04",
+          "score": "4-1"
         },
         {
           "winner": "POR",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-07-06",
+          "score": "4-0"
         },
         {
           "winner": "CHI",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-07-07",
+          "score": "3-1"
         },
         {
           "winner": "ORL",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-07-07",
+          "score": "2-1"
         },
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-07-07",
+          "score": "3-1"
         }
       ]
     },
@@ -328,31 +435,45 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-07-11",
+          "score": "2-0"
         },
         {
           "winner": "SEA",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-07-11",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-07-11",
+          "score": "3-1"
         },
         {
           "winner": "ORL",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-07-14",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-07-14",
+          "score": "4-0"
         },
         {
           "winner": "CHI",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2018-07-14",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-07-15",
+          "score": "3-1"
         }
       ]
     },
@@ -361,11 +482,15 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-07-21",
+          "score": "2-1"
         },
         {
           "winner": "HOU",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-07-22",
+          "score": "1-0"
         }
       ]
     },
@@ -374,15 +499,21 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2018-08-05",
+          "score": "2-1"
         },
         {
           "winner": "SEA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-08-05",
+          "score": "2-0"
         },
         {
           "winner": "UTA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-08-05",
+          "score": "2-1"
         }
       ]
     },
@@ -391,19 +522,27 @@
       "results": [
         {
           "winner": "UTA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-08-08",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2018-08-11",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-08-11",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-08-11",
+          "score": "2-0"
         }
       ]
     },
@@ -412,11 +551,15 @@
       "results": [
         {
           "winner": "HOU",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-08-17",
+          "score": "4-0"
         },
         {
           "winner": "NC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-08-19",
+          "score": "3-0"
         }
       ]
     },
@@ -425,27 +568,39 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-08-21",
+          "score": "2-0"
         },
         {
           "winner": "UTA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-08-22",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-08-22",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-08-25",
+          "score": "3-1"
         },
         {
           "winner": "HOU",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-08-25",
+          "score": "6-1"
         },
         {
           "winner": "POR",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2018-08-25",
+          "score": "1-0"
         }
       ]
     },
@@ -454,23 +609,33 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2018-09-04",
+          "score": "5-0"
         },
         {
           "winner": "POR",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2018-09-07",
+          "score": "3-1"
         },
         {
           "winner": "NJY",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2018-09-08",
+          "score": "1-0"
         },
         {
           "winner": "UTA",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2018-09-08",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2018-09-08",
+          "score": "5-0"
         }
       ]
     }

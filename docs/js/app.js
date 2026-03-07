@@ -22,11 +22,14 @@ async function loadSeason(year) {
     } else if (result.type === 'cycle') {
         chainStatus.textContent = `Complete circle of parity found! All ${seasonData.teams.length} teams connected.`;
         missingTeamsEl.textContent = '';
-    } else {
+    } else if (result.chain.length > 1) {
         chainStatus.textContent = `Longest chain: ${result.chain.length} of ${seasonData.teams.length} teams.`;
         if (result.missingTeams.length > 0) {
             missingTeamsEl.textContent = `Not yet connected: ${result.missingTeams.join(', ')}`;
         }
+    } else {
+        chainStatus.textContent = '';
+        missingTeamsEl.textContent = '';
     }
 }
 

@@ -5,73 +5,85 @@
       "id": "CHI",
       "name": "Chicago Red Stars",
       "color": "#C8102E",
-      "logo": "assets/logos/CHI-2017.png"
+      "logo": "assets/logos/CHI-2017.png",
+      "record": "9-7-6"
     },
     {
       "id": "HOU",
       "name": "Houston Dash",
       "color": "#F26722",
-      "logo": "assets/logos/HOU-2021.png"
+      "logo": "assets/logos/HOU-2021.png",
+      "record": "10-6-6"
     },
     {
       "id": "KC",
       "name": "Kansas City Current",
       "color": "#7A2048",
-      "logo": "assets/logos/KC-2022.png"
+      "logo": "assets/logos/KC-2022.png",
+      "record": "10-6-6"
     },
     {
       "id": "LA",
       "name": "Angel City FC",
       "color": "#000000",
-      "logo": "assets/logos/LA-2022.png"
+      "logo": "assets/logos/LA-2022.png",
+      "record": "8-9-5"
     },
     {
       "id": "LOU",
       "name": "Racing Louisville FC",
       "color": "#7B2481",
-      "logo": "assets/logos/LOU-2021.png"
+      "logo": "assets/logos/LOU-2021.png",
+      "record": "5-9-8"
     },
     {
       "id": "NC",
       "name": "North Carolina Courage",
       "color": "#003DA5",
-      "logo": "assets/logos/NC-2017.png"
+      "logo": "assets/logos/NC-2017.png",
+      "record": "9-8-5"
     },
     {
       "id": "NJY",
       "name": "NJ/NY Gotham FC",
       "color": "#0C2340",
-      "logo": "assets/logos/NJY-2021.png"
+      "logo": "assets/logos/NJY-2021.png",
+      "record": "4-17-1"
     },
     {
       "id": "ORL",
       "name": "Orlando Pride",
       "color": "#633492",
-      "logo": "assets/logos/ORL-2016.png"
+      "logo": "assets/logos/ORL-2016.png",
+      "record": "5-10-7"
     },
     {
       "id": "POR",
       "name": "Portland Thorns FC",
       "color": "#A4162F",
-      "logo": "assets/logos/POR-2018.png"
+      "logo": "assets/logos/POR-2018.png",
+      "record": "10-3-9"
     },
     {
       "id": "SD",
       "name": "San Diego Wave FC",
       "color": "#003DA5",
-      "logo": "assets/logos/SD-2022.png"
+      "logo": "assets/logos/SD-2022.png",
+      "record": "10-6-6"
     },
     {
       "id": "SEA",
       "name": "OL Reign",
       "color": "#862633",
-      "logo": "assets/logos/SEA-2020.png"
+      "logo": "assets/logos/SEA-2020.png",
+      "record": "11-4-7"
     },
     {
       "id": "WAS",
       "name": "Washington Spirit",
       "color": "#C8102E",
-      "logo": "assets/logos/WAS-2013.png"
+      "logo": "assets/logos/WAS-2013.png",
+      "record": "3-9-10"
     }
   ],
   "weeks": [
@@ -80,27 +92,39 @@
       "results": [
         {
           "winner": "LA",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-04-29",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2022-04-30",
+          "score": "3-0"
         },
         {
           "winner": "CHI",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-04-30",
+          "score": "2-1"
         },
         {
           "winner": "WAS",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2022-05-01",
+          "score": "2-1"
         },
         {
           "winner": "SD",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2022-05-01",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-05-01",
+          "score": "3-0"
         }
       ]
     },
@@ -109,15 +133,21 @@
       "results": [
         {
           "winner": "SD",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-05-07",
+          "score": "4-0"
         },
         {
           "winner": "HOU",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2022-05-08",
+          "score": "2-0"
         },
         {
           "winner": "ORL",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-05-08",
+          "score": "1-0"
         }
       ]
     },
@@ -126,11 +156,15 @@
       "results": [
         {
           "winner": "SD",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-05-15",
+          "score": "2-1"
         },
         {
           "winner": "LA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-05-15",
+          "score": "1-0"
         }
       ]
     },
@@ -139,31 +173,45 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-05-18",
+          "score": "2-1"
         },
         {
           "winner": "LOU",
-          "loser": "SD"
+          "loser": "SD",
+          "date": "2022-05-18",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2022-05-21",
+          "score": "2-0"
         },
         {
           "winner": "LA",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2022-05-21",
+          "score": "1-0"
         },
         {
           "winner": "SD",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-05-22",
+          "score": "1-0"
         },
         {
           "winner": "LOU",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-05-22",
+          "score": "1-0"
         },
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-05-22",
+          "score": "4-2"
         }
       ]
     },
@@ -172,15 +220,21 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2022-05-25",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "SD"
+          "loser": "SD",
+          "date": "2022-05-29",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-05-29",
+          "score": "1-0"
         }
       ]
     },
@@ -189,27 +243,39 @@
       "results": [
         {
           "winner": "KC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-05-30",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-06-03",
+          "score": "5-0"
         },
         {
           "winner": "POR",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-06-03",
+          "score": "3-0"
         },
         {
           "winner": "CHI",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2022-06-04",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-06-04",
+          "score": "1-0"
         },
         {
           "winner": "NC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-06-04",
+          "score": "3-0"
         }
       ]
     },
@@ -218,23 +284,33 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-06-11",
+          "score": "3-2"
         },
         {
           "winner": "KC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-06-11",
+          "score": "1-0"
         },
         {
           "winner": "LA",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-06-11",
+          "score": "3-2"
         },
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-06-12",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2022-06-12",
+          "score": "4-0"
         }
       ]
     },
@@ -243,19 +319,27 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-06-18",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-06-19",
+          "score": "6-0"
         },
         {
           "winner": "SD",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-06-19",
+          "score": "3-0"
         },
         {
           "winner": "HOU",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-06-19",
+          "score": "4-3"
         }
       ]
     },
@@ -264,19 +348,27 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-07-01",
+          "score": "2-0"
         },
         {
           "winner": "KC",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2022-07-01",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-07-02",
+          "score": "3-0"
         },
         {
           "winner": "SD",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-07-03",
+          "score": "2-1"
         }
       ]
     },
@@ -285,19 +377,27 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2022-07-08",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-07-08",
+          "score": "2-1"
         },
         {
           "winner": "LA",
-          "loser": "SD"
+          "loser": "SD",
+          "date": "2022-07-09",
+          "score": "2-1"
         },
         {
           "winner": "KC",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-07-10",
+          "score": "1-0"
         }
       ]
     },
@@ -306,15 +406,21 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-07-16",
+          "score": "5-0"
         },
         {
           "winner": "HOU",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-07-16",
+          "score": "4-1"
         },
         {
           "winner": "KC",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2022-07-17",
+          "score": "1-0"
         }
       ]
     },
@@ -323,19 +429,27 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-07-29",
+          "score": "2-1"
         },
         {
           "winner": "SD",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-07-30",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-07-30",
+          "score": "3-2"
         },
         {
           "winner": "HOU",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-07-31",
+          "score": "4-2"
         }
       ]
     },
@@ -344,15 +458,21 @@
       "results": [
         {
           "winner": "KC",
-          "loser": "SD"
+          "loser": "SD",
+          "date": "2022-08-07",
+          "score": "2-1"
         },
         {
           "winner": "HOU",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2022-08-07",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-08-07",
+          "score": "2-0"
         }
       ]
     },
@@ -361,23 +481,33 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-08-10",
+          "score": "2-1"
         },
         {
           "winner": "ORL",
-          "loser": "SD"
+          "loser": "SD",
+          "date": "2022-08-13",
+          "score": "1-0"
         },
         {
           "winner": "KC",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-08-13",
+          "score": "4-3"
         },
         {
           "winner": "SEA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-08-14",
+          "score": "4-1"
         },
         {
           "winner": "LA",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-08-14",
+          "score": "1-0"
         }
       ]
     },
@@ -386,19 +516,27 @@
       "results": [
         {
           "winner": "HOU",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-08-17",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-08-20",
+          "score": "4-0"
         },
         {
           "winner": "ORL",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-08-20",
+          "score": "2-1"
         },
         {
           "winner": "SD",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2022-08-20",
+          "score": "3-1"
         }
       ]
     },
@@ -407,27 +545,39 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2022-08-24",
+          "score": "3-1"
         },
         {
           "winner": "SEA",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-08-26",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-08-27",
+          "score": "4-0"
         },
         {
           "winner": "SD",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2022-08-27",
+          "score": "2-0"
         },
         {
           "winner": "LA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-08-28",
+          "score": "3-1"
         },
         {
           "winner": "KC",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-08-28",
+          "score": "3-2"
         }
       ]
     },
@@ -436,7 +586,9 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-09-04",
+          "score": "1-0"
         }
       ]
     },
@@ -445,19 +597,27 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-09-09",
+          "score": "2-0"
         },
         {
           "winner": "WAS",
-          "loser": "SD"
+          "loser": "SD",
+          "date": "2022-09-10",
+          "score": "4-3"
         },
         {
           "winner": "NC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-09-10",
+          "score": "5-1"
         },
         {
           "winner": "KC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-09-11",
+          "score": "1-0"
         }
       ]
     },
@@ -466,31 +626,45 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-09-14",
+          "score": "1-0"
         },
         {
           "winner": "CHI",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2022-09-14",
+          "score": "4-0"
         },
         {
           "winner": "LOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-09-16",
+          "score": "2-0"
         },
         {
           "winner": "WAS",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-09-17",
+          "score": "2-0"
         },
         {
           "winner": "SEA",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2022-09-17",
+          "score": "2-1"
         },
         {
           "winner": "SD",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-09-17",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-09-17",
+          "score": "1-0"
         }
       ]
     },
@@ -499,39 +673,57 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-09-21",
+          "score": "1-0"
         },
         {
           "winner": "NC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-09-21",
+          "score": "3-0"
         },
         {
           "winner": "POR",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2022-09-21",
+          "score": "3-0"
         },
         {
           "winner": "LA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-09-21",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2022-09-24",
+          "score": "3-0"
         },
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2022-09-24",
+          "score": "2-0"
         },
         {
           "winner": "POR",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2022-09-25",
+          "score": "3-0"
         },
         {
           "winner": "KC",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-09-25",
+          "score": "3-0"
         },
         {
           "winner": "LOU",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-09-25",
+          "score": "3-1"
         }
       ]
     },
@@ -540,19 +732,27 @@
       "results": [
         {
           "winner": "HOU",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2022-10-01",
+          "score": "2-1"
         },
         {
           "winner": "LOU",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2022-10-01",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2022-10-01",
+          "score": "3-0"
         },
         {
           "winner": "CHI",
-          "loser": "LA"
+          "loser": "LA",
+          "date": "2022-10-02",
+          "score": "2-0"
         }
       ]
     }

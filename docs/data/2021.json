@@ -5,61 +5,71 @@
       "id": "CHI",
       "name": "Chicago Red Stars",
       "color": "#C8102E",
-      "logo": "assets/logos/CHI-2017.png"
+      "logo": "assets/logos/CHI-2017.png",
+      "record": "11-8-5"
     },
     {
       "id": "HOU",
       "name": "Houston Dash",
       "color": "#F26722",
-      "logo": "assets/logos/HOU-2021.png"
+      "logo": "assets/logos/HOU-2021.png",
+      "record": "9-10-5"
     },
     {
       "id": "KC",
       "name": "Kansas City Current",
       "color": "#7A2048",
-      "logo": "assets/logos/KC-2021.png"
+      "logo": "assets/logos/KC-2021.png",
+      "record": "3-14-7"
     },
     {
       "id": "LOU",
       "name": "Racing Louisville FC",
       "color": "#7B2481",
-      "logo": "assets/logos/LOU-2021.png"
+      "logo": "assets/logos/LOU-2021.png",
+      "record": "5-12-7"
     },
     {
       "id": "NC",
       "name": "North Carolina Courage",
       "color": "#003DA5",
-      "logo": "assets/logos/NC-2017.png"
+      "logo": "assets/logos/NC-2017.png",
+      "record": "9-9-6"
     },
     {
       "id": "NJY",
       "name": "NJ/NY Gotham FC",
       "color": "#0C2340",
-      "logo": "assets/logos/NJY-2021.png"
+      "logo": "assets/logos/NJY-2021.png",
+      "record": "8-5-11"
     },
     {
       "id": "ORL",
       "name": "Orlando Pride",
       "color": "#633492",
-      "logo": "assets/logos/ORL-2016.png"
+      "logo": "assets/logos/ORL-2016.png",
+      "record": "7-10-7"
     },
     {
       "id": "POR",
       "name": "Portland Thorns FC",
       "color": "#A4162F",
-      "logo": "assets/logos/POR-2018.png"
+      "logo": "assets/logos/POR-2018.png",
+      "record": "13-6-5"
     },
     {
       "id": "SEA",
       "name": "OL Reign",
       "color": "#862633",
-      "logo": "assets/logos/SEA-2020.png"
+      "logo": "assets/logos/SEA-2020.png",
+      "record": "13-8-3"
     },
     {
       "id": "WAS",
       "name": "Washington Spirit",
       "color": "#C8102E",
-      "logo": "assets/logos/WAS-2013.png"
+      "logo": "assets/logos/WAS-2013.png",
+      "record": "11-7-6"
     }
   ],
   "weeks": [
@@ -68,11 +78,15 @@
       "results": [
         {
           "winner": "NJY",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-05-15",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-05-16",
+          "score": "5-0"
         }
       ]
     },
@@ -81,15 +95,21 @@
       "results": [
         {
           "winner": "LOU",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-05-21",
+          "score": "2-0"
         },
         {
           "winner": "ORL",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-05-22",
+          "score": "2-1"
         },
         {
           "winner": "SEA",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2021-05-23",
+          "score": "2-1"
         }
       ]
     },
@@ -98,35 +118,51 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2021-05-26",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-05-26",
+          "score": "2-0"
         },
         {
           "winner": "WAS",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-05-26",
+          "score": "2-1"
         },
         {
           "winner": "NC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-05-28",
+          "score": "5-0"
         },
         {
           "winner": "HOU",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-05-29",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2021-05-30",
+          "score": "1-0"
         },
         {
           "winner": "WAS",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-05-30",
+          "score": "1-0"
         },
         {
           "winner": "ORL",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-05-30",
+          "score": "1-0"
         }
       ]
     },
@@ -135,19 +171,27 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-06-05",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-06-05",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-06-05",
+          "score": "3-0"
         },
         {
           "winner": "HOU",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-06-06",
+          "score": "1-0"
         }
       ]
     },
@@ -156,15 +200,21 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-06-19",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-06-20",
+          "score": "1-0"
         },
         {
           "winner": "LOU",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-06-20",
+          "score": "1-0"
         }
       ]
     },
@@ -173,35 +223,51 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-06-22",
+          "score": "2-0"
         },
         {
           "winner": "ORL",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-06-23",
+          "score": "3-1"
         },
         {
           "winner": "NC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-06-23",
+          "score": "2-0"
         },
         {
           "winner": "NJY",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-06-26",
+          "score": "3-0"
         },
         {
           "winner": "LOU",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-06-26",
+          "score": "3-0"
         },
         {
           "winner": "NC",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2021-06-26",
+          "score": "2-0"
         },
         {
           "winner": "HOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-06-26",
+          "score": "2-1"
         },
         {
           "winner": "WAS",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-06-26",
+          "score": "2-1"
         }
       ]
     },
@@ -210,19 +276,27 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-07-02",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-07-02",
+          "score": "2-0"
         },
         {
           "winner": "POR",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-07-03",
+          "score": "2-0"
         },
         {
           "winner": "NC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-07-04",
+          "score": "2-0"
         }
       ]
     },
@@ -231,15 +305,21 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-07-10",
+          "score": "2-0"
         },
         {
           "winner": "SEA",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-07-11",
+          "score": "2-0"
         },
         {
           "winner": "CHI",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-07-11",
+          "score": "2-1"
         }
       ]
     },
@@ -248,19 +328,27 @@
       "results": [
         {
           "winner": "HOU",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-07-17",
+          "score": "2-1"
         },
         {
           "winner": "NJY",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-07-18",
+          "score": "3-2"
         },
         {
           "winner": "CHI",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-07-18",
+          "score": "3-1"
         },
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-07-18",
+          "score": "2-1"
         }
       ]
     },
@@ -269,19 +357,27 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-07-24",
+          "score": "2-0"
         },
         {
           "winner": "POR",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-07-24",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-07-25",
+          "score": "2-1"
         },
         {
           "winner": "WAS",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-07-25",
+          "score": "2-0"
         }
       ]
     },
@@ -290,15 +386,21 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-07-31",
+          "score": "2-0"
         },
         {
           "winner": "POR",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-08-01",
+          "score": "2-0"
         },
         {
           "winner": "CHI",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-08-01",
+          "score": "3-1"
         }
       ]
     },
@@ -307,23 +409,33 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2021-08-07",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-08-07",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-08-07",
+          "score": "5-1"
         },
         {
           "winner": "LOU",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-08-08",
+          "score": "3-1"
         },
         {
           "winner": "ORL",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-08-08",
+          "score": "2-0"
         }
       ]
     },
@@ -332,11 +444,15 @@
       "results": [
         {
           "winner": "KC",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-08-14",
+          "score": "1-0"
         },
         {
           "winner": "NC",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-08-15",
+          "score": "1-0"
         }
       ]
     },
@@ -345,15 +461,21 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-08-21",
+          "score": "4-0"
         },
         {
           "winner": "SEA",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2021-08-21",
+          "score": "3-2"
         },
         {
           "winner": "WAS",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-08-22",
+          "score": "2-1"
         }
       ]
     },
@@ -362,27 +484,39 @@
       "results": [
         {
           "winner": "KC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-08-25",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2021-08-25",
+          "score": "2-1"
         },
         {
           "winner": "CHI",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-08-28",
+          "score": "3-0"
         },
         {
           "winner": "SEA",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2021-08-29",
+          "score": "2-1"
         },
         {
           "winner": "ORL",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2021-08-29",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-08-29",
+          "score": "1-0"
         }
       ]
     },
@@ -391,11 +525,15 @@
       "results": [
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-09-01",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-09-04",
+          "score": "3-0"
         }
       ]
     },
@@ -404,15 +542,21 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-09-11",
+          "score": "3-1"
         },
         {
           "winner": "POR",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-09-12",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2021-09-12",
+          "score": "3-0"
         }
       ]
     },
@@ -421,23 +565,33 @@
       "results": [
         {
           "winner": "NJY",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-09-25",
+          "score": "3-1"
         },
         {
           "winner": "CHI",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2021-09-25",
+          "score": "2-1"
         },
         {
           "winner": "HOU",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-09-26",
+          "score": "4-0"
         },
         {
           "winner": "SEA",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-09-26",
+          "score": "3-0"
         },
         {
           "winner": "WAS",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-09-26",
+          "score": "2-1"
         }
       ]
     },
@@ -446,27 +600,39 @@
       "results": [
         {
           "winner": "NC",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-10-06",
+          "score": "3-1"
         },
         {
           "winner": "HOU",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2021-10-06",
+          "score": "3-2"
         },
         {
           "winner": "NJY",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-10-09",
+          "score": "3-2"
         },
         {
           "winner": "WAS",
-          "loser": "LOU"
+          "loser": "LOU",
+          "date": "2021-10-09",
+          "score": "3-0"
         },
         {
           "winner": "SEA",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2021-10-10",
+          "score": "3-2"
         },
         {
           "winner": "HOU",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-10-10",
+          "score": "4-1"
         }
       ]
     },
@@ -475,35 +641,51 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-10-13",
+          "score": "2-1"
         },
         {
           "winner": "KC",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-10-13",
+          "score": "3-0"
         },
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-10-13",
+          "score": "1-0"
         },
         {
           "winner": "LOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-10-16",
+          "score": "3-1"
         },
         {
           "winner": "WAS",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2021-10-16",
+          "score": "2-0"
         },
         {
           "winner": "CHI",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-10-16",
+          "score": "2-1"
         },
         {
           "winner": "NJY",
-          "loser": "NC"
+          "loser": "NC",
+          "date": "2021-10-17",
+          "score": "3-0"
         },
         {
           "winner": "POR",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-10-17",
+          "score": "1-0"
         }
       ]
     },
@@ -512,15 +694,21 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2021-10-29",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "KC"
+          "loser": "KC",
+          "date": "2021-10-30",
+          "score": "3-0"
         },
         {
           "winner": "WAS",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2021-10-31",
+          "score": "1-0"
         }
       ]
     }

@@ -5,61 +5,71 @@
       "id": "BOS",
       "name": "Boston Breakers",
       "color": "#002244",
-      "logo": "assets/logos/BOS_BRK-2013.png"
+      "logo": "assets/logos/BOS_BRK-2013.png",
+      "record": "3-15-2"
     },
     {
       "id": "CHI",
       "name": "Chicago Red Stars",
       "color": "#C8102E",
-      "logo": "assets/logos/CHI-2013.png"
+      "logo": "assets/logos/CHI-2013.png",
+      "record": "9-5-6"
     },
     {
       "id": "FCKC",
       "name": "FC Kansas City",
       "color": "#003087",
-      "logo": "assets/logos/FCKC-2013.png"
+      "logo": "assets/logos/FCKC-2013.png",
+      "record": "7-8-5"
     },
     {
       "id": "HOU",
       "name": "Houston Dash",
       "color": "#F26722",
-      "logo": "assets/logos/HOU-2014.png"
+      "logo": "assets/logos/HOU-2014.png",
+      "record": "6-10-4"
     },
     {
       "id": "ORL",
       "name": "Orlando Pride",
       "color": "#633492",
-      "logo": "assets/logos/ORL-2016.png"
+      "logo": "assets/logos/ORL-2016.png",
+      "record": "6-13-1"
     },
     {
       "id": "POR",
       "name": "Portland Thorns FC",
       "color": "#A4162F",
-      "logo": "assets/logos/POR-2013.png"
+      "logo": "assets/logos/POR-2013.png",
+      "record": "12-3-5"
     },
     {
       "id": "SEA",
       "name": "Seattle Reign FC",
       "color": "#862633",
-      "logo": "assets/logos/SEA-2013.png"
+      "logo": "assets/logos/SEA-2013.png",
+      "record": "8-6-6"
     },
     {
       "id": "NJY",
       "name": "Sky Blue FC",
       "color": "#0C2340",
-      "logo": "assets/logos/SKYBLUE-2013.png"
+      "logo": "assets/logos/SKYBLUE-2013.png",
+      "record": "7-8-5"
     },
     {
       "id": "WAS",
       "name": "Washington Spirit",
       "color": "#C8102E",
-      "logo": "assets/logos/WAS-2013.png"
+      "logo": "assets/logos/WAS-2013.png",
+      "record": "12-5-3"
     },
     {
       "id": "WNY",
       "name": "Western New York Flash",
       "color": "#FFB81C",
-      "logo": "assets/logos/WNY-2013.png"
+      "logo": "assets/logos/WNY-2013.png",
+      "record": "9-6-5"
     }
   ],
   "weeks": [
@@ -68,23 +78,33 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-04-16",
+          "score": "1-0"
         },
         {
           "winner": "WNY",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-04-16",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2016-04-16",
+          "score": "3-1"
         },
         {
           "winner": "NJY",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2016-04-17",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-04-17",
+          "score": "2-1"
         }
       ]
     },
@@ -93,19 +113,27 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "WNY"
+          "loser": "WNY",
+          "date": "2016-04-23",
+          "score": "1-0"
         },
         {
           "winner": "ORL",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-04-23",
+          "score": "3-1"
         },
         {
           "winner": "WAS",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-04-24",
+          "score": "2-1"
         },
         {
           "winner": "SEA",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-04-24",
+          "score": "3-0"
         }
       ]
     },
@@ -114,19 +142,27 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "WNY"
+          "loser": "WNY",
+          "date": "2016-04-29",
+          "score": "3-0"
         },
         {
           "winner": "SEA",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-05-01",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-05-01",
+          "score": "1-0"
         },
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-05-01",
+          "score": "1-0"
         }
       ]
     },
@@ -135,19 +171,27 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-05-07",
+          "score": "1-0"
         },
         {
           "winner": "WNY",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-05-07",
+          "score": "2-1"
         },
         {
           "winner": "HOU",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-05-07",
+          "score": "2-1"
         },
         {
           "winner": "ORL",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2016-05-08",
+          "score": "2-0"
         }
       ]
     },
@@ -156,15 +200,21 @@
       "results": [
         {
           "winner": "NJY",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-05-13",
+          "score": "1-0"
         },
         {
           "winner": "WAS",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-05-14",
+          "score": "1-0"
         },
         {
           "winner": "ORL",
-          "loser": "WNY"
+          "loser": "WNY",
+          "date": "2016-05-14",
+          "score": "1-0"
         }
       ]
     },
@@ -173,23 +223,33 @@
       "results": [
         {
           "winner": "ORL",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-05-20",
+          "score": "1-0"
         },
         {
           "winner": "WNY",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-05-21",
+          "score": "5-2"
         },
         {
           "winner": "POR",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2016-05-21",
+          "score": "4-1"
         },
         {
           "winner": "CHI",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2016-05-22",
+          "score": "2-1"
         },
         {
           "winner": "BOS",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-05-22",
+          "score": "1-0"
         }
       ]
     },
@@ -198,11 +258,15 @@
       "results": [
         {
           "winner": "WNY",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-05-27",
+          "score": "4-0"
         },
         {
           "winner": "FCKC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-05-28",
+          "score": "2-0"
         }
       ]
     },
@@ -211,11 +275,15 @@
       "results": [
         {
           "winner": "WNY",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-06-11",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-06-12",
+          "score": "1-0"
         }
       ]
     },
@@ -224,19 +292,27 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "WNY"
+          "loser": "WNY",
+          "date": "2016-06-17",
+          "score": "2-0"
         },
         {
           "winner": "WAS",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-06-18",
+          "score": "2-0"
         },
         {
           "winner": "CHI",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-06-18",
+          "score": "3-0"
         },
         {
           "winner": "FCKC",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-06-19",
+          "score": "1-0"
         }
       ]
     },
@@ -245,23 +321,33 @@
       "results": [
         {
           "winner": "POR",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2016-06-22",
+          "score": "2-0"
         },
         {
           "winner": "ORL",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-06-23",
+          "score": "1-0"
         },
         {
           "winner": "WNY",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-06-24",
+          "score": "7-1"
         },
         {
           "winner": "NJY",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2016-06-25",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-06-26",
+          "score": "2-1"
         }
       ]
     },
@@ -270,19 +356,27 @@
       "results": [
         {
           "winner": "WNY",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2016-07-01",
+          "score": "2-0"
         },
         {
           "winner": "WAS",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-07-02",
+          "score": "2-0"
         },
         {
           "winner": "SEA",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-07-02",
+          "score": "2-0"
         },
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-07-02",
+          "score": "2-1"
         }
       ]
     },
@@ -291,23 +385,33 @@
       "results": [
         {
           "winner": "WNY",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2016-07-09",
+          "score": "3-2"
         },
         {
           "winner": "WAS",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2016-07-09",
+          "score": "2-0"
         },
         {
           "winner": "NJY",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-07-09",
+          "score": "1-0"
         },
         {
           "winner": "FCKC",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2016-07-09",
+          "score": "2-1"
         },
         {
           "winner": "ORL",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-07-10",
+          "score": "2-1"
         }
       ]
     },
@@ -316,19 +420,27 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-07-16",
+          "score": "3-2"
         },
         {
           "winner": "CHI",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-07-16",
+          "score": "1-0"
         },
         {
           "winner": "HOU",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2016-07-16",
+          "score": "3-0"
         },
         {
           "winner": "NJY",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-07-17",
+          "score": "3-2"
         }
       ]
     },
@@ -337,15 +449,21 @@
       "results": [
         {
           "winner": "FCKC",
-          "loser": "WNY"
+          "loser": "WNY",
+          "date": "2016-07-23",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2016-07-23",
+          "score": "1-0"
         },
         {
           "winner": "SEA",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-07-23",
+          "score": "5-2"
         }
       ]
     },
@@ -354,19 +472,27 @@
       "results": [
         {
           "winner": "CHI",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-07-30",
+          "score": "1-0"
         },
         {
           "winner": "POR",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2016-07-30",
+          "score": "1-0"
         },
         {
           "winner": "WAS",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-07-31",
+          "score": "3-1"
         },
         {
           "winner": "BOS",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-07-31",
+          "score": "1-0"
         }
       ]
     },
@@ -375,7 +501,9 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-08-18",
+          "score": "2-1"
         }
       ]
     },
@@ -384,19 +512,27 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-08-26",
+          "score": "2-1"
         },
         {
           "winner": "SEA",
-          "loser": "POR"
+          "loser": "POR",
+          "date": "2016-08-27",
+          "score": "3-1"
         },
         {
           "winner": "CHI",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-08-27",
+          "score": "3-1"
         },
         {
           "winner": "BOS",
-          "loser": "FCKC"
+          "loser": "FCKC",
+          "date": "2016-08-28",
+          "score": "2-0"
         }
       ]
     },
@@ -405,19 +541,27 @@
       "results": [
         {
           "winner": "HOU",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-08-31",
+          "score": "3-1"
         },
         {
           "winner": "HOU",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-09-03",
+          "score": "4-2"
         },
         {
           "winner": "POR",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-09-04",
+          "score": "5-1"
         },
         {
           "winner": "FCKC",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-09-04",
+          "score": "2-1"
         }
       ]
     },
@@ -426,31 +570,45 @@
       "results": [
         {
           "winner": "WAS",
-          "loser": "SEA"
+          "loser": "SEA",
+          "date": "2016-09-07",
+          "score": "2-1"
         },
         {
           "winner": "POR",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-09-07",
+          "score": "3-0"
         },
         {
           "winner": "FCKC",
-          "loser": "CHI"
+          "loser": "CHI",
+          "date": "2016-09-07",
+          "score": "3-2"
         },
         {
           "winner": "NJY",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-09-10",
+          "score": "2-1"
         },
         {
           "winner": "HOU",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-09-11",
+          "score": "4-1"
         },
         {
           "winner": "POR",
-          "loser": "WNY"
+          "loser": "WNY",
+          "date": "2016-09-11",
+          "score": "3-2"
         },
         {
           "winner": "SEA",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2016-09-11",
+          "score": "2-0"
         }
       ]
     },
@@ -459,23 +617,33 @@
       "results": [
         {
           "winner": "FCKC",
-          "loser": "ORL"
+          "loser": "ORL",
+          "date": "2016-09-24",
+          "score": "2-1"
         },
         {
           "winner": "WNY",
-          "loser": "BOS"
+          "loser": "BOS",
+          "date": "2016-09-24",
+          "score": "4-0"
         },
         {
           "winner": "CHI",
-          "loser": "WAS"
+          "loser": "WAS",
+          "date": "2016-09-24",
+          "score": "3-1"
         },
         {
           "winner": "POR",
-          "loser": "NJY"
+          "loser": "NJY",
+          "date": "2016-09-25",
+          "score": "3-1"
         },
         {
           "winner": "SEA",
-          "loser": "HOU"
+          "loser": "HOU",
+          "date": "2016-09-25",
+          "score": "3-2"
         }
       ]
     }

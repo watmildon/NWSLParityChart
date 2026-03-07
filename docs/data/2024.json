@@ -5,358 +5,1129 @@
       "id": "BAY",
       "name": "Bay FC",
       "color": "#1A3C5E",
-      "logo": "assets/logos/BAY-2024.png"
+      "logo": "assets/logos/BAY-2024.png",
+      "record": "11-14-1"
     },
     {
       "id": "CHI",
       "name": "Chicago Red Stars",
       "color": "#C8102E",
-      "logo": "assets/logos/CHI-2024.png"
+      "logo": "assets/logos/CHI-2024.png",
+      "record": "10-14-2"
     },
     {
       "id": "HOU",
       "name": "Houston Dash",
       "color": "#F26722",
-      "logo": "assets/logos/HOU-2021.png"
+      "logo": "assets/logos/HOU-2021.png",
+      "record": "5-16-5"
     },
     {
       "id": "KC",
       "name": "Kansas City Current",
       "color": "#7A2048",
-      "logo": "assets/logos/KC-2022.png"
+      "logo": "assets/logos/KC-2022.png",
+      "record": "16-3-7"
     },
     {
       "id": "LA",
       "name": "Angel City FC",
       "color": "#000000",
-      "logo": "assets/logos/LA-2022.png"
+      "logo": "assets/logos/LA-2022.png",
+      "record": "7-13-6"
     },
     {
       "id": "LOU",
       "name": "Racing Louisville FC",
       "color": "#7B2481",
-      "logo": "assets/logos/LOU-2021.png"
+      "logo": "assets/logos/LOU-2021.png",
+      "record": "7-12-7"
     },
     {
       "id": "NC",
       "name": "North Carolina Courage",
       "color": "#003DA5",
-      "logo": "assets/logos/NC-2017.png"
+      "logo": "assets/logos/NC-2017.png",
+      "record": "12-11-3"
     },
     {
       "id": "NJY",
       "name": "NJ/NY Gotham FC",
       "color": "#0C2340",
-      "logo": "assets/logos/NJY-2021.png"
+      "logo": "assets/logos/NJY-2021.png",
+      "record": "17-4-5"
     },
     {
       "id": "ORL",
       "name": "Orlando Pride",
       "color": "#633492",
-      "logo": "assets/logos/ORL-2016.png"
+      "logo": "assets/logos/ORL-2016.png",
+      "record": "18-2-6"
     },
     {
       "id": "POR",
       "name": "Portland Thorns FC",
       "color": "#A4162F",
-      "logo": "assets/logos/POR-2018.png"
+      "logo": "assets/logos/POR-2018.png",
+      "record": "10-12-4"
     },
     {
       "id": "SD",
       "name": "San Diego Wave FC",
       "color": "#003DA5",
-      "logo": "assets/logos/SD-2022.png"
+      "logo": "assets/logos/SD-2022.png",
+      "record": "6-13-7"
     },
     {
       "id": "SEA",
       "name": "Seattle Reign FC",
       "color": "#862633",
-      "logo": "assets/logos/SEA-2024.png"
+      "logo": "assets/logos/SEA-2024.png",
+      "record": "6-15-5"
     },
     {
       "id": "UTA",
       "name": "Utah Royals FC",
       "color": "#FFD700",
-      "logo": "assets/logos/UTA-2024.png"
+      "logo": "assets/logos/UTA-2024.png",
+      "record": "7-15-4"
     },
     {
       "id": "WAS",
       "name": "Washington Spirit",
       "color": "#C8102E",
-      "logo": "assets/logos/WAS-2023.png"
+      "logo": "assets/logos/WAS-2023.png",
+      "record": "18-6-2"
     }
   ],
   "weeks": [
     {
-      "week": 0,
+      "week": 1,
       "results": [
         {
-          "winner": "BAY",
-          "loser": "CHI"
-        },
-        {
-          "winner": "BAY",
-          "loser": "LA"
-        },
-        {
-          "winner": "BAY",
-          "loser": "LOU"
-        },
-        {
-          "winner": "BAY",
-          "loser": "POR"
-        },
-        {
-          "winner": "BAY",
-          "loser": "SEA"
+          "winner": "KC",
+          "loser": "POR",
+          "date": "2024-03-16",
+          "score": "5-4"
         },
         {
           "winner": "CHI",
-          "loser": "BAY"
-        },
-        {
-          "winner": "CHI",
-          "loser": "HOU"
-        },
-        {
-          "winner": "CHI",
-          "loser": "POR"
-        },
-        {
-          "winner": "CHI",
-          "loser": "SD"
-        },
-        {
-          "winner": "CHI",
-          "loser": "SEA"
-        },
-        {
-          "winner": "CHI",
-          "loser": "UTA"
-        },
-        {
-          "winner": "HOU",
-          "loser": "BAY"
-        },
-        {
-          "winner": "HOU",
-          "loser": "LA"
-        },
-        {
-          "winner": "HOU",
-          "loser": "SD"
-        },
-        {
-          "winner": "KC",
-          "loser": "BAY"
-        },
-        {
-          "winner": "KC",
-          "loser": "LA"
-        },
-        {
-          "winner": "KC",
-          "loser": "LOU"
-        },
-        {
-          "winner": "KC",
-          "loser": "POR"
-        },
-        {
-          "winner": "KC",
-          "loser": "SD"
-        },
-        {
-          "winner": "KC",
-          "loser": "UTA"
-        },
-        {
-          "winner": "LA",
-          "loser": "CHI"
-        },
-        {
-          "winner": "LA",
-          "loser": "SD"
-        },
-        {
-          "winner": "LA",
-          "loser": "SEA"
-        },
-        {
-          "winner": "LA",
-          "loser": "UTA"
-        },
-        {
-          "winner": "LOU",
-          "loser": "CHI"
-        },
-        {
-          "winner": "LOU",
-          "loser": "NC"
-        },
-        {
-          "winner": "LOU",
-          "loser": "LA"
-        },
-        {
-          "winner": "LOU",
-          "loser": "HOU"
-        },
-        {
-          "winner": "LOU",
-          "loser": "UTA"
+          "loser": "UTA",
+          "date": "2024-03-16",
+          "score": "2-0"
         },
         {
           "winner": "NC",
-          "loser": "CHI"
+          "loser": "HOU",
+          "date": "2024-03-16",
+          "score": "5-1"
         },
         {
-          "winner": "NC",
-          "loser": "SD"
+          "winner": "SEA",
+          "loser": "WAS",
+          "date": "2024-03-17",
+          "score": "1-0"
         },
         {
-          "winner": "NC",
-          "loser": "WAS"
-        },
-        {
-          "winner": "NJY",
-          "loser": "BAY"
-        },
-        {
-          "winner": "NJY",
-          "loser": "CHI"
-        },
-        {
-          "winner": "NJY",
-          "loser": "HOU"
+          "winner": "BAY",
+          "loser": "LA",
+          "date": "2024-03-17",
+          "score": "1-0"
         },
         {
           "winner": "NJY",
-          "loser": "LA"
+          "loser": "SD",
+          "date": "2024-06-19",
+          "score": "2-1"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "SEA",
+          "date": "2024-03-23",
+          "score": "2-1"
+        },
+        {
+          "winner": "UTA",
+          "loser": "NC",
+          "date": "2024-03-22",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "BAY",
+          "date": "2024-03-23",
+          "score": "2-1"
         },
         {
           "winner": "NJY",
-          "loser": "LOU"
+          "loser": "POR",
+          "date": "2024-03-24",
+          "score": "1-0"
         },
         {
-          "winner": "NJY",
-          "loser": "POR"
-        },
+          "winner": "KC",
+          "loser": "SD",
+          "date": "2024-03-23",
+          "score": "2-1"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "results": [
         {
-          "winner": "NJY",
-          "loser": "SEA"
-        },
-        {
-          "winner": "ORL",
-          "loser": "BAY"
-        },
-        {
-          "winner": "ORL",
-          "loser": "CHI"
-        },
-        {
-          "winner": "ORL",
-          "loser": "HOU"
-        },
-        {
-          "winner": "ORL",
-          "loser": "KC"
-        },
-        {
-          "winner": "ORL",
-          "loser": "LA"
-        },
-        {
-          "winner": "ORL",
-          "loser": "SEA"
-        },
-        {
-          "winner": "ORL",
-          "loser": "UTA"
-        },
-        {
-          "winner": "ORL",
-          "loser": "WAS"
-        },
-        {
-          "winner": "POR",
-          "loser": "BAY"
-        },
-        {
-          "winner": "POR",
-          "loser": "CHI"
-        },
-        {
-          "winner": "POR",
-          "loser": "HOU"
-        },
-        {
-          "winner": "POR",
-          "loser": "ORL"
+          "winner": "KC",
+          "loser": "LA",
+          "date": "2024-03-30",
+          "score": "4-2"
         },
         {
           "winner": "SD",
-          "loser": "UTA"
-        },
-        {
-          "winner": "SEA",
-          "loser": "LA"
-        },
-        {
-          "winner": "SEA",
-          "loser": "LOU"
-        },
-        {
-          "winner": "UTA",
-          "loser": "BAY"
-        },
-        {
-          "winner": "UTA",
-          "loser": "HOU"
-        },
-        {
-          "winner": "UTA",
-          "loser": "POR"
-        },
-        {
-          "winner": "WAS",
-          "loser": "BAY"
-        },
-        {
-          "winner": "WAS",
-          "loser": "CHI"
-        },
-        {
-          "winner": "WAS",
-          "loser": "HOU"
-        },
-        {
-          "winner": "WAS",
-          "loser": "LA"
-        },
-        {
-          "winner": "WAS",
-          "loser": "LOU"
-        },
-        {
-          "winner": "WAS",
-          "loser": "NJY"
-        },
-        {
-          "winner": "WAS",
-          "loser": "UTA"
+          "loser": "SEA",
+          "date": "2024-03-29",
+          "score": "1-0"
         },
         {
           "winner": "NC",
-          "loser": "KC"
+          "loser": "NJY",
+          "date": "2024-03-30",
+          "score": "1-0"
         },
         {
           "winner": "WAS",
-          "loser": "KC"
+          "loser": "UTA",
+          "date": "2024-03-31",
+          "score": "2-1"
+        },
+        {
+          "winner": "HOU",
+          "loser": "BAY",
+          "date": "2024-03-30",
+          "score": "3-2"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "HOU",
+          "date": "2024-04-12",
+          "score": "3-1"
+        },
+        {
+          "winner": "NC",
+          "loser": "POR",
+          "date": "2024-04-13",
+          "score": "2-0"
         },
         {
           "winner": "ORL",
-          "loser": "KC"
+          "loser": "UTA",
+          "date": "2024-04-12",
+          "score": "1-0"
+        },
+        {
+          "winner": "LA",
+          "loser": "CHI",
+          "date": "2024-04-13",
+          "score": "1-0"
+        },
+        {
+          "winner": "BAY",
+          "loser": "SEA",
+          "date": "2024-04-14",
+          "score": "3-2"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "NJY",
+          "date": "2024-04-20",
+          "score": "2-0"
+        },
+        {
+          "winner": "LOU",
+          "loser": "UTA",
+          "date": "2024-04-20",
+          "score": "5-1"
+        },
+        {
+          "winner": "KC",
+          "loser": "BAY",
+          "date": "2024-04-20",
+          "score": "5-2"
+        },
+        {
+          "winner": "ORL",
+          "loser": "SD",
+          "date": "2024-04-19",
+          "score": "1-0"
+        },
+        {
+          "winner": "CHI",
+          "loser": "SEA",
+          "date": "2024-04-21",
+          "score": "2-1"
+        },
+        {
+          "winner": "LA",
+          "loser": "NC",
+          "date": "2024-04-21",
+          "score": "2-1"
+        },
+        {
+          "winner": "POR",
+          "loser": "HOU",
+          "date": "2024-04-20",
+          "score": "4-1"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "WAS",
+          "date": "2024-04-26",
+          "score": "3-2"
+        },
+        {
+          "winner": "POR",
+          "loser": "CHI",
+          "date": "2024-04-27",
+          "score": "2-0"
+        },
+        {
+          "winner": "NC",
+          "loser": "SEA",
+          "date": "2024-04-27",
+          "score": "1-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "LA",
+          "date": "2024-04-26",
+          "score": "3-1"
+        },
+        {
+          "winner": "SD",
+          "loser": "BAY",
+          "date": "2024-04-27",
+          "score": "2-1"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "NC",
+          "date": "2024-05-01",
+          "score": "4-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "CHI",
+          "date": "2024-05-01",
+          "score": "4-2"
+        },
+        {
+          "winner": "POR",
+          "loser": "BAY",
+          "date": "2024-05-01",
+          "score": "3-2"
+        },
+        {
+          "winner": "SD",
+          "loser": "UTA",
+          "date": "2024-05-08",
+          "score": "2-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "HOU",
+          "date": "2024-05-08",
+          "score": "1-0"
+        },
+        {
+          "winner": "LA",
+          "loser": "LOU",
+          "date": "2024-06-19",
+          "score": "3-2"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "results": [
+        {
+          "winner": "SEA",
+          "loser": "SD",
+          "date": "2024-05-03",
+          "score": "2-1"
+        },
+        {
+          "winner": "NJY",
+          "loser": "NC",
+          "date": "2024-05-04",
+          "score": "1-0"
+        },
+        {
+          "winner": "LA",
+          "loser": "UTA",
+          "date": "2024-05-03",
+          "score": "2-1"
+        },
+        {
+          "winner": "ORL",
+          "loser": "LOU",
+          "date": "2024-05-05",
+          "score": "1-0"
+        },
+        {
+          "winner": "POR",
+          "loser": "WAS",
+          "date": "2024-05-04",
+          "score": "2-1"
+        },
+        {
+          "winner": "CHI",
+          "loser": "BAY",
+          "date": "2024-05-05",
+          "score": "2-1"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "BAY",
+          "date": "2024-05-11",
+          "score": "1-0"
+        },
+        {
+          "winner": "WAS",
+          "loser": "LOU",
+          "date": "2024-05-10",
+          "score": "2-1"
+        },
+        {
+          "winner": "CHI",
+          "loser": "UTA",
+          "date": "2024-05-12",
+          "score": "3-1"
+        },
+        {
+          "winner": "HOU",
+          "loser": "LA",
+          "date": "2024-05-12",
+          "score": "1-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "NC",
+          "date": "2024-05-12",
+          "score": "1-0"
+        },
+        {
+          "winner": "POR",
+          "loser": "SEA",
+          "date": "2024-05-11",
+          "score": "4-0"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "HOU",
+          "date": "2024-05-17",
+          "score": "2-0"
+        },
+        {
+          "winner": "BAY",
+          "loser": "SD",
+          "date": "2024-05-17",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "LA",
+          "date": "2024-05-18",
+          "score": "4-2"
+        },
+        {
+          "winner": "NC",
+          "loser": "UTA",
+          "date": "2024-05-17",
+          "score": "1-0"
+        },
+        {
+          "winner": "ORL",
+          "loser": "SEA",
+          "date": "2024-05-19",
+          "score": "3-2"
+        },
+        {
+          "winner": "NJY",
+          "loser": "CHI",
+          "date": "2024-05-19",
+          "score": "2-1"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "POR",
+          "date": "2024-05-24",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "SEA",
+          "date": "2024-05-24",
+          "score": "3-2"
+        },
+        {
+          "winner": "LOU",
+          "loser": "CHI",
+          "date": "2024-05-25",
+          "score": "1-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "BAY",
+          "date": "2024-05-24",
+          "score": "2-0"
+        },
+        {
+          "winner": "HOU",
+          "loser": "NC",
+          "date": "2024-05-24",
+          "score": "3-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "UTA",
+          "date": "2024-05-25",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "results": [
+        {
+          "winner": "NJY",
+          "loser": "LA",
+          "date": "2024-06-08",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "UTA",
+          "date": "2024-06-08",
+          "score": "1-0"
+        },
+        {
+          "winner": "BAY",
+          "loser": "CHI",
+          "date": "2024-06-08",
+          "score": "2-1"
+        },
+        {
+          "winner": "LOU",
+          "loser": "HOU",
+          "date": "2024-06-07",
+          "score": "2-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "SEA",
+          "date": "2024-06-09",
+          "score": "5-2"
+        },
+        {
+          "winner": "POR",
+          "loser": "NC",
+          "date": "2024-06-08",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "results": [
+        {
+          "winner": "NJY",
+          "loser": "LOU",
+          "date": "2024-06-15",
+          "score": "2-0"
+        },
+        {
+          "winner": "UTA",
+          "loser": "BAY",
+          "date": "2024-06-16",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "UTA",
+          "date": "2024-06-21",
+          "score": "6-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "POR",
+          "date": "2024-06-23",
+          "score": "4-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "NJY",
+          "date": "2024-06-23",
+          "score": "2-0"
+        },
+        {
+          "winner": "NC",
+          "loser": "CHI",
+          "date": "2024-06-23",
+          "score": "3-1"
+        },
+        {
+          "winner": "BAY",
+          "loser": "LA",
+          "date": "2024-06-22",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "results": [
+        {
+          "winner": "BAY",
+          "loser": "LOU",
+          "date": "2024-06-29",
+          "score": "1-0"
+        },
+        {
+          "winner": "CHI",
+          "loser": "SD",
+          "date": "2024-06-28",
+          "score": "3-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "HOU",
+          "date": "2024-06-28",
+          "score": "2-0"
+        },
+        {
+          "winner": "NC",
+          "loser": "WAS",
+          "date": "2024-06-29",
+          "score": "1-0"
+        },
+        {
+          "winner": "ORL",
+          "loser": "LA",
+          "date": "2024-06-30",
+          "score": "3-0"
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "HOU",
+          "date": "2024-07-06",
+          "score": "1-0"
+        },
+        {
+          "winner": "ORL",
+          "loser": "KC",
+          "date": "2024-07-06",
+          "score": "2-1"
+        },
+        {
+          "winner": "POR",
+          "loser": "SD",
+          "date": "2024-07-05",
+          "score": "1-0"
+        },
+        {
+          "winner": "NC",
+          "loser": "LOU",
+          "date": "2024-07-07",
+          "score": "3-1"
+        },
+        {
+          "winner": "NJY",
+          "loser": "LA",
+          "date": "2024-07-06",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "BAY",
+          "date": "2024-07-06",
+          "score": "3-0"
+        }
+      ]
+    },
+    {
+      "week": 17,
+      "results": [
+        {
+          "winner": "LA",
+          "loser": "SD",
+          "date": "2024-08-24",
+          "score": "2-1"
+        },
+        {
+          "winner": "NJY",
+          "loser": "POR",
+          "date": "2024-08-24",
+          "score": "2-0"
+        },
+        {
+          "winner": "ORL",
+          "loser": "HOU",
+          "date": "2024-08-23",
+          "score": "1-0"
+        },
+        {
+          "winner": "LOU",
+          "loser": "CHI",
+          "date": "2024-08-24",
+          "score": "3-1"
+        },
+        {
+          "winner": "UTA",
+          "loser": "BAY",
+          "date": "2024-08-23",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "KC",
+          "date": "2024-08-25",
+          "score": "4-1"
+        },
+        {
+          "winner": "SEA",
+          "loser": "NC",
+          "date": "2024-08-25",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 18,
+      "results": [
+        {
+          "winner": "BAY",
+          "loser": "POR",
+          "date": "2024-08-30",
+          "score": "3-1"
+        },
+        {
+          "winner": "SEA",
+          "loser": "LOU",
+          "date": "2024-08-31",
+          "score": "3-2"
+        },
+        {
+          "winner": "LA",
+          "loser": "CHI",
+          "date": "2024-09-01",
+          "score": "2-1"
+        },
+        {
+          "winner": "NC",
+          "loser": "KC",
+          "date": "2024-09-01",
+          "score": "2-1"
+        },
+        {
+          "winner": "ORL",
+          "loser": "NJY",
+          "date": "2024-09-01",
+          "score": "2-0"
+        },
+        {
+          "winner": "UTA",
+          "loser": "HOU",
+          "date": "2024-08-31",
+          "score": "3-1"
+        }
+      ]
+    },
+    {
+      "week": 19,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "POR",
+          "date": "2024-09-07",
+          "score": "2-1"
+        },
+        {
+          "winner": "KC",
+          "loser": "UTA",
+          "date": "2024-09-07",
+          "score": "1-0"
+        },
+        {
+          "winner": "SEA",
+          "loser": "LA",
+          "date": "2024-09-06",
+          "score": "3-2"
+        },
+        {
+          "winner": "NJY",
+          "loser": "HOU",
+          "date": "2024-09-08",
+          "score": "2-1"
+        },
+        {
+          "winner": "ORL",
+          "loser": "CHI",
+          "date": "2024-09-08",
+          "score": "1-0"
+        },
+        {
+          "winner": "BAY",
+          "loser": "LOU",
+          "date": "2024-09-07",
+          "score": "1-0"
+        },
+        {
+          "winner": "NC",
+          "loser": "SD",
+          "date": "2024-09-08",
+          "score": "4-1"
+        }
+      ]
+    },
+    {
+      "week": 20,
+      "results": [
+        {
+          "winner": "CHI",
+          "loser": "POR",
+          "date": "2024-09-13",
+          "score": "1-0"
+        },
+        {
+          "winner": "LOU",
+          "loser": "LA",
+          "date": "2024-09-14",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "HOU",
+          "date": "2024-09-15",
+          "score": "3-0"
+        },
+        {
+          "winner": "SD",
+          "loser": "UTA",
+          "date": "2024-09-14",
+          "score": "2-1"
+        },
+        {
+          "winner": "NJY",
+          "loser": "SEA",
+          "date": "2024-09-16",
+          "score": "2-0"
+        }
+      ]
+    },
+    {
+      "week": 21,
+      "results": [
+        {
+          "winner": "KC",
+          "loser": "WAS",
+          "date": "2024-09-20",
+          "score": "3-0"
+        },
+        {
+          "winner": "LOU",
+          "loser": "NC",
+          "date": "2024-09-21",
+          "score": "2-1"
+        },
+        {
+          "winner": "ORL",
+          "loser": "BAY",
+          "date": "2024-09-20",
+          "score": "1-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "UTA",
+          "date": "2024-09-22",
+          "score": "1-0"
+        },
+        {
+          "winner": "HOU",
+          "loser": "SEA",
+          "date": "2024-09-21",
+          "score": "1-0"
+        },
+        {
+          "winner": "CHI",
+          "loser": "SD",
+          "date": "2024-09-21",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 22,
+      "results": [
+        {
+          "winner": "UTA",
+          "loser": "LOU",
+          "date": "2024-09-28",
+          "score": "1-0"
+        },
+        {
+          "winner": "WAS",
+          "loser": "LA",
+          "date": "2024-09-27",
+          "score": "2-1"
+        },
+        {
+          "winner": "ORL",
+          "loser": "HOU",
+          "date": "2024-09-28",
+          "score": "3-1"
+        },
+        {
+          "winner": "BAY",
+          "loser": "SEA",
+          "date": "2024-09-29",
+          "score": "1-0"
+        },
+        {
+          "winner": "NC",
+          "loser": "CHI",
+          "date": "2024-09-29",
+          "score": "3-1"
+        },
+        {
+          "winner": "SD",
+          "loser": "POR",
+          "date": "2024-09-28",
+          "score": "2-0"
+        }
+      ]
+    },
+    {
+      "week": 23,
+      "results": [
+        {
+          "winner": "NC",
+          "loser": "SD",
+          "date": "2024-10-05",
+          "score": "2-1"
+        },
+        {
+          "winner": "LA",
+          "loser": "SEA",
+          "date": "2024-10-04",
+          "score": "1-0"
+        },
+        {
+          "winner": "CHI",
+          "loser": "HOU",
+          "date": "2024-10-04",
+          "score": "2-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "BAY",
+          "date": "2024-10-05",
+          "score": "5-1"
+        },
+        {
+          "winner": "KC",
+          "loser": "LOU",
+          "date": "2024-10-05",
+          "score": "2-0"
+        },
+        {
+          "winner": "ORL",
+          "loser": "WAS",
+          "date": "2024-10-06",
+          "score": "2-0"
+        },
+        {
+          "winner": "UTA",
+          "loser": "POR",
+          "date": "2024-10-05",
+          "score": "2-1"
+        }
+      ]
+    },
+    {
+      "week": 24,
+      "results": [
+        {
+          "winner": "NJY",
+          "loser": "CHI",
+          "date": "2024-10-12",
+          "score": "2-0"
+        },
+        {
+          "winner": "POR",
+          "loser": "ORL",
+          "date": "2024-10-11",
+          "score": "2-0"
+        },
+        {
+          "winner": "UTA",
+          "loser": "SEA",
+          "date": "2024-10-13",
+          "score": "3-0"
+        },
+        {
+          "winner": "WAS",
+          "loser": "LOU",
+          "date": "2024-10-13",
+          "score": "4-1"
+        },
+        {
+          "winner": "KC",
+          "loser": "BAY",
+          "date": "2024-10-12",
+          "score": "1-0"
+        },
+        {
+          "winner": "HOU",
+          "loser": "SD",
+          "date": "2024-10-13",
+          "score": "2-0"
+        }
+      ]
+    },
+    {
+      "week": 25,
+      "results": [
+        {
+          "winner": "KC",
+          "loser": "SD",
+          "date": "2024-10-19",
+          "score": "4-1"
+        },
+        {
+          "winner": "SEA",
+          "loser": "HOU",
+          "date": "2024-10-18",
+          "score": "2-1"
+        },
+        {
+          "winner": "LOU",
+          "loser": "POR",
+          "date": "2024-10-19",
+          "score": "1-0"
+        },
+        {
+          "winner": "WAS",
+          "loser": "CHI",
+          "date": "2024-10-20",
+          "score": "2-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "ORL",
+          "date": "2024-10-20",
+          "score": "3-1"
+        },
+        {
+          "winner": "BAY",
+          "loser": "NC",
+          "date": "2024-10-19",
+          "score": "1-0"
+        }
+      ]
+    },
+    {
+      "week": 26,
+      "results": [
+        {
+          "winner": "ORL",
+          "loser": "SEA",
+          "date": "2024-11-02",
+          "score": "3-2"
+        },
+        {
+          "winner": "POR",
+          "loser": "LA",
+          "date": "2024-11-01",
+          "score": "3-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "UTA",
+          "date": "2024-11-01",
+          "score": "4-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "NC",
+          "date": "2024-11-02",
+          "score": "1-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "CHI",
+          "date": "2024-11-03",
+          "score": "3-1"
+        },
+        {
+          "winner": "SD",
+          "loser": "LOU",
+          "date": "2024-11-03",
+          "score": "3-1"
+        },
+        {
+          "winner": "BAY",
+          "loser": "HOU",
+          "date": "2024-11-02",
+          "score": "3-2"
         }
       ]
     }
@@ -365,18 +1136,18 @@
     "type": "cycle",
     "chain": [
       "BAY",
-      "CHI",
-      "HOU",
       "LA",
-      "SD",
+      "CHI",
       "UTA",
-      "POR",
-      "ORL",
+      "NC",
+      "HOU",
+      "SEA",
       "WAS",
       "NJY",
-      "SEA",
+      "SD",
       "LOU",
-      "NC",
+      "POR",
+      "ORL",
       "KC",
       "BAY"
     ],

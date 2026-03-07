@@ -95,18 +95,20 @@ function renderFullCircle(svgEl, seasonData, parityResult, teamMap) {
     // Arrow marker
     addArrowMarker(svgEl);
 
+    // Scale logo size for team count
+    const nodeRadius = getTeamRadius(teamCount);
+
     // Draw arrows between consecutive teams
     for (let i = 0; i < teamCount; i++) {
         const fromPos = getCirclePosition(i, teamCount);
         const toPos = getCirclePosition((i + 1) % teamCount, teamCount);
-        drawArrow(svgEl, fromPos, toPos);
+        const game = findGameInfo(seasonData, chain[i], chain[(i + 1) % teamCount]);
+        drawArrow(svgEl, fromPos, toPos, nodeRadius, game);
     }
-
-    // Draw team circles with logos
     for (let i = 0; i < teamCount; i++) {
         const teamId = chain[i];
         const pos = getCirclePosition(i, teamCount);
-        drawTeamNode(svgEl, teamId, pos, teamMap.get(teamId));
+        drawTeamNode(svgEl, teamId, pos, teamMap.get(teamId), nodeRadius);
     }
 
     // Center NWSL logo
@@ -145,7 +147,8 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
                     x: CENTER_X + CIRCLE_RADIUS * Math.cos(nextAngle),
                     y: CENTER_Y + CIRCLE_RADIUS * Math.sin(nextAngle)
                 };
-                drawArrow(svgEl, pos, nextPos);
+                const game = findGameInfo(seasonData, chain[i], chain[i + 1]);
+                drawArrow(svgEl, pos, nextPos, undefined, game);
             }
 
             drawTeamNode(svgEl, chain[i], pos, teamMap.get(chain[i]));
@@ -220,40 +223,35 @@ function getCirclePosition(index, total) {
     };
 }
 
+function getTeamRadius(teamCount) {
+    // Scale logos so arrows have room. With 10 teams the default
+    // TEAM_RADIUS fits perfectly; use sqrt for a gentler taper.
+    const baseCount = 10;
+    if (teamCount <= baseCount) return TEAM_RADIUS;
+    return TEAM_RADIUS * Math.sqrt(baseCount / teamCount);
+}
+
 function drawTeamNode(svgEl, teamId, pos, teamData, radius) {
     const r = radius || TEAM_RADIUS;
-    const g = createSvgElement('g', {});
 
-    // White circle background
-    const bg = createSvgElement('circle', {
-        cx: pos.x, cy: pos.y, r: r,
-        fill: 'white', stroke: '#cccccc', 'stroke-width': 2
-    });
-    g.appendChild(bg);
-
-    // Clip path for logo
-    const clipId = `clip-${teamId}`;
-    const clipPath = createSvgElement('clipPath', { id: clipId });
-    const clipCircle = createSvgElement('circle', {
-        cx: pos.x, cy: pos.y, r: r - 2
-    });
-    clipPath.appendChild(clipCircle);
-    svgEl.appendChild(clipPath);
-
-    // Logo image — circular logos fill edge-to-edge; others are scaled down
-    const logoFile = teamData.logo.split('/').pop();
-    const isCircular = CIRCULAR_LOGOS.has(logoFile);
-    const scale = isCircular ? 1 : 0.85;
-    const imgR = r * scale;
+    // Logo image at full size, no background circle or clipping
     const img = createSvgElement('image', {
-        x: pos.x - imgR, y: pos.y - imgR,
-        width: imgR * 2, height: imgR * 2,
-        'clip-path': `url(#${clipId})`
+        x: pos.x - r, y: pos.y - r,
+        width: r * 2, height: r * 2,
+        cursor: 'pointer'
     });
     img.setAttributeNS(XLINK_NS, 'href', teamData.logo);
-    g.appendChild(img);
 
-    svgEl.appendChild(g);
+    // Tooltip: team name + record
+    const tooltipHtml = teamData.record
+        ? `<strong>${teamData.name}</strong><br>${teamData.record}`
+        : `<strong>${teamData.name}</strong>`;
+    img.addEventListener('mouseenter', e => showTooltip(e, tooltipHtml));
+    img.addEventListener('mousemove', e => moveTooltip(e));
+    img.addEventListener('mouseleave', hideTooltip);
+    img.addEventListener('touchstart', e => { e.preventDefault(); showTooltip(e, tooltipHtml); });
+
+    svgEl.appendChild(img);
 }
 
 function drawCenterLogo(svgEl) {
@@ -317,14 +315,15 @@ function drawTitle(svgEl, text) {
     }
 }
 
-function drawArrow(svgEl, from, to) {
+function drawArrow(svgEl, from, to, nodeRadius, gameInfo) {
+    const r = nodeRadius || TEAM_RADIUS;
     // Compute angles of the from/to points on the main circle
     const fromAngle = Math.atan2(from.y - CENTER_Y, from.x - CENTER_X);
     const toAngle = Math.atan2(to.y - CENTER_Y, to.x - CENTER_X);
 
-    // Shorten start/end along the circle arc to clear team circles
-    const startGap = (TEAM_RADIUS + 4) / CIRCLE_RADIUS; // angular gap in radians
-    const endGap = (TEAM_RADIUS + 8) / CIRCLE_RADIUS;
+    // Shorten start/end along the circle arc to clear team logos
+    const startGap = (r + 4) / CIRCLE_RADIUS; // angular gap in radians
+    const endGap = (r + 8) / CIRCLE_RADIUS;
     const startAngle = fromAngle + startGap;
     const endAngle = toAngle - endGap;
 
@@ -333,16 +332,37 @@ function drawArrow(svgEl, from, to) {
     const endX = CENTER_X + CIRCLE_RADIUS * Math.cos(endAngle);
     const endY = CENTER_Y + CIRCLE_RADIUS * Math.sin(endAngle);
 
-    // SVG arc: follows the main circle's circumference
-    // sweep-flag=1 for clockwise
+    const arcD = `M ${startX} ${startY} A ${CIRCLE_RADIUS} ${CIRCLE_RADIUS} 0 0 1 ${endX} ${endY}`;
+
+    // Invisible wider hit target for easier hovering
+    const hitTarget = createSvgElement('path', {
+        d: arcD,
+        fill: 'none',
+        stroke: 'transparent',
+        'stroke-width': 14,
+        cursor: 'pointer'
+    });
+    svgEl.appendChild(hitTarget);
+
+    // Visible arrow
     const path = createSvgElement('path', {
-        d: `M ${startX} ${startY} A ${CIRCLE_RADIUS} ${CIRCLE_RADIUS} 0 0 1 ${endX} ${endY}`,
+        d: arcD,
         fill: 'none',
         stroke: ARROW_COLOR,
         'stroke-width': ARROW_WIDTH,
-        'marker-end': 'url(#arrowhead)'
+        'marker-end': 'url(#arrowhead)',
+        'pointer-events': 'none'
     });
     svgEl.appendChild(path);
+
+    // Tooltip on the hit target
+    if (gameInfo) {
+        const tooltipHtml = formatGameTooltip(gameInfo);
+        hitTarget.addEventListener('mouseenter', e => showTooltip(e, tooltipHtml));
+        hitTarget.addEventListener('mousemove', e => moveTooltip(e));
+        hitTarget.addEventListener('mouseleave', hideTooltip);
+        hitTarget.addEventListener('touchstart', e => { e.preventDefault(); showTooltip(e, tooltipHtml); });
+    }
 }
 
 function addArrowMarker(svgEl) {
@@ -368,4 +388,55 @@ function createSvgElement(tag, attrs) {
         el.setAttribute(key, val);
     }
     return el;
+}
+
+// ---- Tooltip helpers ----
+
+function showTooltip(evt, html) {
+    const tip = document.getElementById('tooltip');
+    tip.innerHTML = html;
+    tip.classList.add('visible');
+    moveTooltip(evt);
+}
+
+function moveTooltip(evt) {
+    const tip = document.getElementById('tooltip');
+    const x = (evt.touches ? evt.touches[0].clientX : evt.clientX) + 12;
+    const y = (evt.touches ? evt.touches[0].clientY : evt.clientY) + 12;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+}
+
+function hideTooltip() {
+    document.getElementById('tooltip').classList.remove('visible');
+}
+
+// Dismiss tooltip when tapping elsewhere on mobile
+document.addEventListener('touchstart', e => {
+    if (!e.target.closest('#tooltip')) hideTooltip();
+});
+
+function formatGameTooltip(game) {
+    let lines = [];
+    if (game.date) {
+        const d = new Date(game.date + 'T00:00:00');
+        lines.push(d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }));
+    }
+    if (game.score) {
+        lines.push(`${game.winner} ${game.score.replace('-', ' - ')} ${game.loser}`);
+    } else {
+        lines.push(`${game.winner} beat ${game.loser}`);
+    }
+    return lines.join('<br>');
+}
+
+function findGameInfo(seasonData, winner, loser) {
+    for (const week of seasonData.weeks) {
+        for (const result of week.results) {
+            if (result.winner === winner && result.loser === loser) {
+                return result;
+            }
+        }
+    }
+    return null;
 }

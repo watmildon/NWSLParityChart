@@ -94,3 +94,23 @@ footer {
 footer a {
     color: #666;
 }
+
+.tooltip {
+    position: fixed;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 1000;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.tooltip.visible {
+    opacity: 1;
+}
