@@ -227,3 +227,14 @@ AppPackages/
 
 # Scratch/working data
 scratch/
+
+# AI/LLM
+.claude/
+.cursorrules
+.cursor/
+.aider*
+.github/copilot-*
+copilot-*
+.codeium/
+.continue/
+.codex/
