@@ -33,6 +33,32 @@ h1 {
     color: #0B2137;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #0B2137;
+    color: white;
+    transition: background 0.15s;
+}
+
+.github-link:hover {
+    background: #333;
+}
+
+.github-link svg {
+    display: block;
+}
+
 .season-selector label {
     font-size: 0.9rem;
     margin-right: 6px;
