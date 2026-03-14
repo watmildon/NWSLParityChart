@@ -98,5 +98,17 @@
       "logo": "assets/logos/WAS-2023.png"
     }
   ],
-  "weeks": []
+  "weeks": [
+    {
+      "week": 1,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "WAS",
+          "date": "2026-03-13",
+          "score": "1-0"
+        }
+      ]
+    }
+  ]
 }
