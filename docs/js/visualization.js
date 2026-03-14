@@ -119,63 +119,68 @@ function renderFullCircle(svgEl, seasonData, parityResult, teamMap) {
 }
 
 /**
- * Partial: longest path as an arc, missing teams below.
+ * Partial: longest path on a full circle with invisible placeholders.
+ * All team slots are laid out on the full circle. Chain teams are visible;
+ * remaining slots are invisible placeholders. Arrows only connect
+ * consecutive chain teams (never to/from a placeholder).
  */
 function renderPartial(svgEl, seasonData, parityResult, teamMap) {
     const chain = parityResult.chain;
-    const missing = parityResult.missingTeams;
     const totalTeams = seasonData.teams.length;
     const hasChain = chain.length > 1;
 
     addArrowMarker(svgEl);
 
+    const nodeRadius = getTeamRadius(totalTeams);
+
+    // Build the full circle slot list: chain teams first, then placeholders
+    const chainSet = new Set(chain);
+    const placeholders = seasonData.teams
+        .map(t => t.id)
+        .filter(id => !chainSet.has(id));
+    const slots = [...chain, ...placeholders];
+
+    // Draw arrows only between consecutive chain members
     if (hasChain) {
-        // Place chain teams on an arc proportional to their count
-        const arcFraction = chain.length / totalTeams;
-        const startAngle = -Math.PI / 2 - (arcFraction * Math.PI); // center the arc at top
-
-        for (let i = 0; i < chain.length; i++) {
-            const angle = startAngle + (2 * Math.PI * arcFraction * i / chain.length);
-            const pos = {
-                x: CENTER_X + CIRCLE_RADIUS * Math.cos(angle),
-                y: CENTER_Y + CIRCLE_RADIUS * Math.sin(angle)
-            };
-
-            if (i < chain.length - 1) {
-                const nextAngle = startAngle + (2 * Math.PI * arcFraction * (i + 1) / chain.length);
-                const nextPos = {
-                    x: CENTER_X + CIRCLE_RADIUS * Math.cos(nextAngle),
-                    y: CENTER_Y + CIRCLE_RADIUS * Math.sin(nextAngle)
-                };
-                const game = findGameInfo(seasonData, chain[i], chain[i + 1]);
-                drawArrow(svgEl, pos, nextPos, undefined, game);
-            }
-
-            drawTeamNode(svgEl, chain[i], pos, teamMap.get(chain[i]));
+        for (let i = 0; i < chain.length - 1; i++) {
+            const fromIdx = i;
+            const toIdx = i + 1;
+            const fromPos = getCirclePosition(fromIdx, totalTeams);
+            const toPos = getCirclePosition(toIdx, totalTeams);
+            const game = findGameInfo(seasonData, chain[i], chain[i + 1]);
+            drawArrow(svgEl, fromPos, toPos, nodeRadius, game);
         }
+    }
+
+    // Draw team nodes: visible for chain teams, skip placeholders
+    for (let i = 0; i < slots.length; i++) {
+        const pos = getCirclePosition(i, totalTeams);
+        if (i < chain.length) {
+            drawTeamNode(svgEl, slots[i], pos, teamMap.get(slots[i]), nodeRadius);
+        }
+        // Placeholders are invisible — nothing rendered
     }
 
     // Center NWSL logo
     drawCenterLogo(svgEl);
 
-    // Teams not in the chain — shown as a cluster anchored to the bottom
-    const allUnconnected = hasChain ? missing : seasonData.teams.map(t => t.id);
-    if (allUnconnected.length > 0) {
+    // Title
+    drawTitle(svgEl, `The ${seasonData.season} NWSL Circle of Parity`);
+
+    // Unchained teams shown as a cluster below the circle
+    if (placeholders.length > 0) {
         const spacing = 55;
         const maxPerRow = 10;
         const rows = [];
-        for (let i = 0; i < allUnconnected.length; i += maxPerRow) {
-            rows.push(allUnconnected.slice(i, i + maxPerRow));
+        for (let i = 0; i < placeholders.length; i += maxPerRow) {
+            rows.push(placeholders.slice(i, i + maxPerRow));
         }
 
-        // Anchor cluster from the bottom of the viewBox, working upward
         const bottomMargin = 30;
-        const lastRowY = VIEW_SIZE - bottomMargin - 22; // 22 = small team radius
+        const lastRowY = VIEW_SIZE - bottomMargin - 22;
         const clusterFirstRowY = lastRowY - (rows.length - 1) * 60;
         const labelY = clusterFirstRowY - 35;
 
-        // Label
-        const labelText = hasChain ? 'Not yet connected' : 'No results yet';
         const label = createSvgElement('text', {
             x: CENTER_X, y: labelY,
             'text-anchor': 'middle',
@@ -183,7 +188,7 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
             'font-size': '14',
             fill: '#999'
         });
-        label.textContent = labelText;
+        label.textContent = 'Not yet connected';
         svgEl.appendChild(label);
 
         for (let r = 0; r < rows.length; r++) {
@@ -196,21 +201,7 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
         }
     }
 
-    // Title
-    drawTitle(svgEl, `The ${seasonData.season} NWSL Circle of Parity`);
 
-    // Status text
-    if (hasChain) {
-        const status = createSvgElement('text', {
-            x: CENTER_X, y: CENTER_Y + 60,
-            'text-anchor': 'middle',
-            'font-family': 'Arial, sans-serif',
-            'font-size': '16',
-            fill: '#666'
-        });
-        status.textContent = `Longest chain: ${chain.length} of ${totalTeams} teams`;
-        svgEl.appendChild(status);
-    }
 }
 
 // ---- Drawing helpers ----
