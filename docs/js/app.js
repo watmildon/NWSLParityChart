@@ -1,5 +1,6 @@
 /**
  * App entry point: loads season data, runs algorithm, renders visualization.
+ * Supports URL hash routing: #2025, #2024, etc.
  */
 
 const seasonSelect = document.getElementById('season');
@@ -33,9 +34,33 @@ async function loadSeason(year) {
     }
 }
 
+function getYearFromHash() {
+    const hash = location.hash.replace('#', '');
+    // Validate it's an available option
+    const option = seasonSelect.querySelector(`option[value="${hash}"]`);
+    return option ? hash : null;
+}
+
+function setYear(year, updateHash) {
+    seasonSelect.value = year;
+    if (updateHash) {
+        history.replaceState(null, '', `#${year}`);
+    }
+    loadSeason(year);
+}
+
 seasonSelect.addEventListener('change', () => {
-    loadSeason(seasonSelect.value);
+    const year = seasonSelect.value;
+    history.pushState(null, '', `#${year}`);
+    loadSeason(year);
 });
 
-// Load initial season
-loadSeason(seasonSelect.value);
+window.addEventListener('popstate', () => {
+    const year = getYearFromHash() || seasonSelect.querySelector('[selected]').value;
+    seasonSelect.value = year;
+    loadSeason(year);
+});
+
+// Initial load: use hash if present, otherwise use the default selected option
+const initialYear = getYearFromHash() || seasonSelect.value;
+setYear(initialYear, true);
