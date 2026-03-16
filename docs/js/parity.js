@@ -48,7 +48,8 @@ function _dfsCycle(start, current, visited, path, adjacency, longest) {
     for (const neighbor of neighbors) {
         path.push({ from: current, to: neighbor });
 
-        if (neighbor === start && path.length > longest.length) {
+        if (neighbor === start && (path.length > longest.length ||
+            (path.length === longest.length && _containsPreferredEdges(path) && !_containsPreferredEdges(longest)))) {
             longest.length = 0;
             longest.push(...path);
         } else if (!visited.has(neighbor)) {
@@ -83,7 +84,8 @@ function findLongestPath(adjacency, teams) {
 }
 
 function _dfsPath(current, visited, path, adjacency, longest) {
-    if (path.length > longest.length) {
+    if (path.length > longest.length ||
+        (path.length === longest.length && _containsPreferred(path) && !_containsPreferred(longest))) {
         longest.length = 0;
         longest.push(...path);
     }
@@ -109,6 +111,17 @@ function shuffleArray(arr) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     return arr;
+}
+
+/** Preferred team for tiebreaking equal-length paths/cycles. */
+const PREFERRED_TEAM = 'SEA';
+
+function _containsPreferred(path) {
+    return path.includes(PREFERRED_TEAM);
+}
+
+function _containsPreferredEdges(edges) {
+    return edges.some(e => e.from === PREFERRED_TEAM || e.to === PREFERRED_TEAM);
 }
 
 /**

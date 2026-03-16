@@ -103,9 +103,51 @@
       "week": 1,
       "results": [
         {
+          "winner": "NC",
+          "loser": "LOU",
+          "date": "2026-03-14",
+          "score": "2-1"
+        },
+        {
+          "winner": "BAY",
+          "loser": "DEN",
+          "date": "2026-03-14",
+          "score": "2-1"
+        },
+        {
+          "winner": "KC",
+          "loser": "UTA",
+          "date": "2026-03-14",
+          "score": "2-1"
+        },
+        {
+          "winner": "NJY",
+          "loser": "BOS",
+          "date": "2026-03-14",
+          "score": "1-0"
+        },
+        {
           "winner": "POR",
           "loser": "WAS",
-          "date": "2026-03-13",
+          "date": "2026-03-14",
+          "score": "1-0"
+        },
+        {
+          "winner": "LA",
+          "loser": "CHI",
+          "date": "2026-03-15",
+          "score": "4-0"
+        },
+        {
+          "winner": "SEA",
+          "loser": "ORL",
+          "date": "2026-03-15",
+          "score": "2-1"
+        },
+        {
+          "winner": "HOU",
+          "loser": "SD",
+          "date": "2026-03-15",
           "score": "1-0"
         }
       ]

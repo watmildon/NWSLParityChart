@@ -228,6 +228,13 @@ AppPackages/
 # Scratch/working data
 scratch/
 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
 # AI/LLM
 .claude/
 .cursorrules

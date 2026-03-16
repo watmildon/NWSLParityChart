@@ -140,11 +140,18 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
         .filter(id => !chainSet.has(id));
     const slots = [...chain, ...placeholders];
 
+    // Rotate slots so SEA (Reign) is at position 0 (top of the circle)
+    const seaSlotIdx = slots.indexOf('SEA');
+    let rotationOffset = 0;
+    if (seaSlotIdx > 0) {
+        rotationOffset = seaSlotIdx;
+    }
+
     // Draw arrows only between consecutive chain members
     if (hasChain) {
         for (let i = 0; i < chain.length - 1; i++) {
-            const fromIdx = i;
-            const toIdx = i + 1;
+            const fromIdx = (i + rotationOffset) % totalTeams;
+            const toIdx = (i + 1 + rotationOffset) % totalTeams;
             const fromPos = getCirclePosition(fromIdx, totalTeams);
             const toPos = getCirclePosition(toIdx, totalTeams);
             const game = findGameInfo(seasonData, chain[i], chain[i + 1]);
@@ -154,7 +161,8 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
 
     // Draw team nodes: visible for chain teams, skip placeholders
     for (let i = 0; i < slots.length; i++) {
-        const pos = getCirclePosition(i, totalTeams);
+        const posIdx = (i + rotationOffset) % totalTeams;
+        const pos = getCirclePosition(posIdx, totalTeams);
         if (i < chain.length) {
             drawTeamNode(svgEl, slots[i], pos, teamMap.get(slots[i]), nodeRadius);
         }
