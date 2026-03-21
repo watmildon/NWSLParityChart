@@ -151,6 +151,17 @@
           "score": "1-0"
         }
       ]
+    },
+    {
+      "week": 2,
+      "results": [
+        {
+          "winner": "POR",
+          "loser": "SEA",
+          "date": "2026-03-21",
+          "score": "2-0"
+        }
+      ]
     }
   ]
 }
