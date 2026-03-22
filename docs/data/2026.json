@@ -160,6 +160,18 @@
           "loser": "SEA",
           "date": "2026-03-21",
           "score": "2-0"
+        },
+        {
+          "winner": "HOU",
+          "loser": "BOS",
+          "date": "2026-03-21",
+          "score": "3-0"
+        },
+        {
+          "winner": "LA",
+          "loser": "BAY",
+          "date": "2026-03-22",
+          "score": "3-1"
         }
       ]
     }
