@@ -186,6 +186,17 @@
           "score": "2-1"
         }
       ]
+    },
+    {
+      "week": 3,
+      "results": [
+        {
+          "winner": "DEN",
+          "loser": "NJY",
+          "date": "2026-03-25",
+          "score": "2-0"
+        }
+      ]
     }
   ]
 }
