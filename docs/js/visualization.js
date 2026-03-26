@@ -140,11 +140,14 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
         .filter(id => !chainSet.has(id));
     const slots = [...chain, ...placeholders];
 
-    // Rotate slots so SEA (Reign) is at position 0 (top of the circle)
-    const seaSlotIdx = slots.indexOf('SEA');
+    // If the Reign are in the chain, rotate so SEA is at the top.
+    // Otherwise, chain starts at the top (no rotation needed).
+    const seaChainIdx = chain.indexOf('SEA');
     let rotationOffset = 0;
-    if (seaSlotIdx > 0) {
-        rotationOffset = seaSlotIdx;
+    if (seaChainIdx > 0) {
+        // Slot seaChainIdx should map to position 0 (top):
+        // (seaChainIdx + offset) % totalTeams === 0
+        rotationOffset = totalTeams - seaChainIdx;
     }
 
     // Draw arrows only between consecutive chain members
@@ -275,6 +278,15 @@ function drawTitle(svgEl, text) {
     const logoSize = 310;
     const logoTop = CENTER_Y - CIRCLE_RADIUS + 85;
     const textTop = logoTop + logoSize + 30;
+
+    // White background behind title text to prevent iOS Safari from
+    // rendering the image element's opaque compositing layer over the text
+    const bgRect = createSvgElement('rect', {
+        x: CENTER_X - 160, y: textTop - 24,
+        width: 320, height: 68,
+        fill: 'white'
+    });
+    svgEl.appendChild(bgRect);
 
     // Split into two lines: "The YYYY NWSL" and "Circle of Parity"
     const match = text.match(/^The (\d+) NWSL (.+)$/);
