@@ -292,6 +292,23 @@
           "score": "2-0"
         }
       ]
+    },
+    {
+      "week": 5,
+      "results": [
+        {
+          "winner": "LOU",
+          "loser": "ORL",
+          "date": "2026-04-24",
+          "score": "3-2"
+        },
+        {
+          "winner": "WAS",
+          "loser": "KC",
+          "date": "2026-04-25",
+          "score": "4-0"
+        }
+      ]
     }
   ]
 }
