@@ -307,6 +307,30 @@
           "loser": "KC",
           "date": "2026-04-25",
           "score": "4-0"
+        },
+        {
+          "winner": "CHI",
+          "loser": "BOS",
+          "date": "2026-04-25",
+          "score": "2-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "BAY",
+          "date": "2026-04-25",
+          "score": "3-0"
+        },
+        {
+          "winner": "SD",
+          "loser": "DEN",
+          "date": "2026-04-26",
+          "score": "3-2"
+        },
+        {
+          "winner": "NC",
+          "loser": "HOU",
+          "date": "2026-04-26",
+          "score": "1-0"
         }
       ]
     }
