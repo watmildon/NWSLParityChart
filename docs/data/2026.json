@@ -331,6 +331,18 @@
           "loser": "HOU",
           "date": "2026-04-26",
           "score": "1-0"
+        },
+        {
+          "winner": "POR",
+          "loser": "LA",
+          "date": "2026-04-26",
+          "score": "2-1"
+        },
+        {
+          "winner": "UTA",
+          "loser": "SEA",
+          "date": "2026-04-27",
+          "score": "3-0"
         }
       ]
     }
