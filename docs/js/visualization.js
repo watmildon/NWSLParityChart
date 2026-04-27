@@ -279,15 +279,6 @@ function drawTitle(svgEl, text) {
     const logoTop = CENTER_Y - CIRCLE_RADIUS + 85;
     const textTop = logoTop + logoSize + 30;
 
-    // White background behind title text to prevent iOS Safari from
-    // rendering the image element's opaque compositing layer over the text
-    const bgRect = createSvgElement('rect', {
-        x: CENTER_X - 160, y: textTop - 24,
-        width: 320, height: 68,
-        fill: 'white'
-    });
-    svgEl.appendChild(bgRect);
-
     // Split into two lines: "The YYYY NWSL" and "Circle of Parity"
     const match = text.match(/^The (\d+) NWSL (.+)$/);
     if (match) {
