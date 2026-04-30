@@ -345,6 +345,29 @@
           "score": "3-0"
         }
       ]
+    },
+    {
+      "week": 6,
+      "results": [
+        {
+          "winner": "WAS",
+          "loser": "LOU",
+          "date": "2026-04-29",
+          "score": "1-0"
+        },
+        {
+          "winner": "POR",
+          "loser": "SD",
+          "date": "2026-04-30",
+          "score": "2-0"
+        },
+        {
+          "winner": "NJY",
+          "loser": "CHI",
+          "date": "2026-04-30",
+          "score": "2-0"
+        }
+      ]
     }
   ]
 }
