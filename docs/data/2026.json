@@ -366,6 +366,24 @@
           "loser": "CHI",
           "date": "2026-04-30",
           "score": "2-0"
+        },
+        {
+          "winner": "KC",
+          "loser": "NC",
+          "date": "2026-05-02",
+          "score": "2-1"
+        },
+        {
+          "winner": "WAS",
+          "loser": "ORL",
+          "date": "2026-05-02",
+          "score": "4-2"
+        },
+        {
+          "winner": "UTA",
+          "loser": "LA",
+          "date": "2026-05-03",
+          "score": "1-0"
         }
       ]
     }
