@@ -112,7 +112,7 @@ function renderFullCircle(svgEl, seasonData, parityResult, teamMap) {
     }
 
     // Center NWSL logo
-    drawCenterLogo(svgEl);
+    drawCenterLogo(svgEl, chain.slice(0, teamCount));
 
     // Title
     drawTitle(svgEl, `The ${seasonData.season} NWSL Circle of Parity`);
@@ -173,7 +173,7 @@ function renderPartial(svgEl, seasonData, parityResult, teamMap) {
     }
 
     // Center NWSL logo
-    drawCenterLogo(svgEl);
+    drawCenterLogo(svgEl, chain);
 
     // Title
     drawTitle(svgEl, `The ${seasonData.season} NWSL Circle of Parity`);
@@ -256,7 +256,7 @@ function drawTeamNode(svgEl, teamId, pos, teamData, radius) {
     svgEl.appendChild(img);
 }
 
-function drawCenterLogo(svgEl) {
+function drawCenterLogo(svgEl, chain) {
     // Logo + title block centered in the ring.
     // Ring inner area spans CENTER_Y ± CIRCLE_RADIUS (y: 100–660).
     // Logo occupies ~60% of ring diameter; positioned above center
@@ -270,6 +270,11 @@ function drawCenterLogo(svgEl) {
         width: logoSize, height: logoSize
     });
     img.setAttributeNS(XLINK_NS, 'href', 'assets/logos/nwsl.png');
+    if (chain && chain.length > 0) {
+        const title = createSvgElement('title', {});
+        title.textContent = chain.join(' -> ');
+        img.appendChild(title);
+    }
     svgEl.appendChild(img);
 }
 

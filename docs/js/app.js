@@ -6,6 +6,7 @@
 const seasonSelect = document.getElementById('season');
 const svgEl = document.getElementById('parity-chart');
 const chainStatus = document.getElementById('chain-status');
+const chainListEl = document.getElementById('chain-list');
 const missingTeamsEl = document.getElementById('missing-teams');
 
 async function loadSeason(year) {
@@ -19,17 +20,23 @@ async function loadSeason(year) {
     // Update info panel
     if (seasonData.cancelled) {
         chainStatus.textContent = '';
+        chainListEl.textContent = '';
         missingTeamsEl.textContent = '';
     } else if (result.type === 'cycle') {
         chainStatus.textContent = `Complete circle of parity found! All ${seasonData.teams.length} teams connected.`;
+        chainListEl.textContent = result.chain.join(' → ');
         missingTeamsEl.textContent = '';
     } else if (result.chain.length > 1) {
         chainStatus.textContent = `Longest chain: ${result.chain.length} of ${seasonData.teams.length} teams.`;
+        chainListEl.textContent = result.chain.join(' → ');
         if (result.missingTeams.length > 0) {
             missingTeamsEl.textContent = `Not yet connected: ${result.missingTeams.join(', ')}`;
+        } else {
+            missingTeamsEl.textContent = '';
         }
     } else {
         chainStatus.textContent = '';
+        chainListEl.textContent = '';
         missingTeamsEl.textContent = '';
     }
 }
