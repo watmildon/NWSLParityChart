@@ -1,9 +1,9 @@
 name: Update NWSL Data
 
 on:
-  schedule:
-    # Run nightly at 6 AM UTC (1-2 AM ET, after late west coast games finish)
-    - cron: "0 6 * * *"
+  # Nightly schedule disabled — run manually via workflow_dispatch.
+  # schedule:
+  #   - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       season:
